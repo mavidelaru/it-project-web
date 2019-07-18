@@ -63,7 +63,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Contributors
 
 [Citlas](https://github.com/citlas/)
-[Bernat Moragas ](https://github.com/picapoll/)
+[Bernat](https://github.com/picapoll/)
 [Luciana](https://github.com/luciana/)
 [Pol](https://github.com/mrploman/)
 
