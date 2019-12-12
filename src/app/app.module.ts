@@ -8,6 +8,10 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ChartsComponent } from './components/global/charts/charts.component';
 import { TablesComponent } from './components/global/tables/tables.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { StadisticsComponent } from './components/stadistics/stadistics.component';
+import { ClassroomComponent } from './components/classroom/classroom.component';
+import { RevisionComponent } from './components/revision/revision.component';
+import { StudentComponent } from './components/student/student.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     MenuComponent,
     ChartsComponent,
-    TablesComponent
+    TablesComponent,
+    StadisticsComponent,
+    ClassroomComponent,
+    RevisionComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,
