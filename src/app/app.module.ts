@@ -28,7 +28,7 @@ import { StudentComponent } from './components/student/student.component';
     TablesComponent,
 
     ResetPasswordRequestComponent,
-    NewPasswordResetComponent
+    NewPasswordResetComponent,
 
     StadisticsComponent,
     ClassroomComponent,
