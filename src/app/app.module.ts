@@ -8,6 +8,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ChartsComponent } from './components/global/charts/charts.component';
 import { TablesComponent } from './components/global/tables/tables.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ResetPasswordRequestComponent } from './components/reset-password-request/reset-password-request.component';
+import { RouterModule } from '@angular/router';
+import { NewPasswordResetComponent } from './components/new-password-reset/new-password-reset.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     MenuComponent,
     ChartsComponent,
-    TablesComponent
+    TablesComponent,
+    ResetPasswordRequestComponent,
+    NewPasswordResetComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
