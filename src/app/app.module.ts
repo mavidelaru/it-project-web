@@ -1,5 +1,5 @@
+import { AlumnoService } from 'src/app/services/alumno.service';
 import { HttpClient } from 'selenium-webdriver/http';
-import { AlumnoService } from 'app/services/alumno.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -37,7 +37,7 @@ import { from } from 'rxjs';
     StadisticsComponent,
     ClassroomComponent,
     RevisionComponent,
-    StudentComponent
+    StudentComponent,
 
   ],
   imports: [
@@ -46,6 +46,7 @@ import { from } from 'rxjs';
     ReactiveFormsModule,
     RouterModule,
     HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
