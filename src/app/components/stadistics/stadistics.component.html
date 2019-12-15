@@ -1,2 +1,45 @@
-<p>TODO: juntar los componentes de global</p>
-<p>stadistics works!</p>
+<div class="container">
+
+
+    <h1 class="text-center">Estadísticas</h1>
+
+    <hr>
+    <div class="row">
+
+        <div class="col-6">
+            <h2 class="text-center">Personas por itinerario</h2>
+            <app-peoplepie></app-peoplepie>
+        </div>
+
+        <div class="col-6">
+            <h2 class="text-center">Sexo</h2>
+            <app-genrepie></app-genrepie>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-6">
+            <h2 class="text-center">Personas con más de 8 faltas</h2>
+
+            <p *ngFor="let student of students">
+                <span *ngIf="student.absence>=8">{{student.name}} {{student.absence}}</span>
+            </p>
+
+
+        </div>
+
+        <div class="col-6">
+            <h2 class="text-center">Personas que acaban en menos de dos semanas</h2>
+
+
+
+
+        </div>
+
+
+
+    </div>
+</div>
