@@ -91,7 +91,7 @@ export const STUDENTS: Student[] = [
     },
     {
         name: 'MINGUELLA BLASCO, DANIEL',
-        absence: ''
+        absence: 0
     },
     {
         name: 'LESCANO CORREA, MAGALI',
