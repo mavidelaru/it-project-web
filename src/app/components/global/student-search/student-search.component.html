@@ -1,5 +1,29 @@
-<form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-pink" type="submit">Search</button>
-</form>
-<!-- <p>student-search works!</p> -->
+<div class="row justify-content-center">
+    <form class="form-inline mb-2">
+        <div class="form-check-inline">
+            <label class="form-check-label small">
+          <input type="radio" class="form-check-input" name="optradio" checked="checked">Todos
+        </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label small">
+          <input type="radio" class="form-check-input" name="optradio">Nombre completo
+        </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label small">
+          <input type="radio" class="form-check-input" name="optradio">Solo Nombre
+        </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label small">
+          <input type="radio" class="form-check-input" name="optradio">Solo Apellido
+        </label>
+        </div>
+    </form>
+    <form class="form-inline col-12 justify-content-center">
+        <input class="form-control mr-2 col-6 col-sm-8 col-md-10" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-pink" type="submit">Search</button>
+        <!-- TODO: añadir ventana desplegable mostrando el resultado de la búsqueda -->
+    </form>
+</div>
