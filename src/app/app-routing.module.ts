@@ -6,13 +6,10 @@ import { ClassroomComponent } from './components/classroom/classroom.component';
 import { RevisionComponent } from './components/revision/revision.component';
 import { StudentComponent } from './components/student/student.component';
 
-<<<<<<< HEAD
-=======
 import { ResetPasswordRequestComponent } from './components/reset-password-request/reset-password-request.component';
 import { LoginComponent } from './components/login/login.component';
 import { CommonModule } from '@angular/common';
 
->>>>>>> 688af1aec84dcc099727f234d8b955c37d6ada94
 
 const routes: Routes = [
   {
@@ -26,20 +23,17 @@ const routes: Routes = [
   },
   {
     path: 'student', component: StudentComponent
-<<<<<<< HEAD
-=======
   },
   {
     path: 'reset-password', component: ResetPasswordRequestComponent
   },
   {
     path: 'login', component: LoginComponent
->>>>>>> 688af1aec84dcc099727f234d8b955c37d6ada94
   }
 ];
 
 @NgModule({
-  imports: [ 
+  imports: [
     CommonModule,
     RouterModule.forRoot(routes)
   ],
