@@ -33,7 +33,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [ 
+  imports: [
     CommonModule,
     RouterModule.forRoot(routes)
   ],
