@@ -47,18 +47,6 @@ label {
     color: $black;
 }
 
-button {
-    font-size: 1.125em;
-    background-color: $pink;
-    color: $white;
-    width: 120px;
-}
-
-button:hover {
-    color: $white;
-    text-decoration: underline;
-}
-
 .main-container {
     padding-top: 15vh;
     padding-bottom: 10vh;
@@ -70,8 +58,27 @@ button:hover {
     color: $black;
 }
 
-.forgot-password a {
+button.submit-btn {
+    font-size: 1.125em;
+    background-color: $pink;
+    color: $white;
+    width: 120px;
+}
+
+button.submit-btn:hover {
+    color: $white;
+    text-decoration: underline;
+}
+
+button.forgot-password {
     color: $blue;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+button.forgot-password:hover {
+    text-decoration: underline;
 }
 
 
