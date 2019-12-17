@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Alumno } from './model/alumno';
+import { AlumnoService } from 'src/app/services/alumno.service';
 
 @Component({
   selector: 'app-tables',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TablesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private alumnoService: AlumnoService) { }
+
+  tooManyAbsences: Alumno[] = [];
+  almostDone: Alumno[] = [];
 
   ngOnInit() {
+    this.tooManyAbsences = this.alumnoService.getByAbsences(8);
+    this.almostDone = this.alumnoService.getTwooWeeksToEnd();
   }
 
 }
