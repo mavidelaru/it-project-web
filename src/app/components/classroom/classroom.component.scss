@@ -1,0 +1,79 @@
+/* COLORS */
+
+$white: #FFFFFFFF;
+$light-grey: #E8E8E8;
+$dark-grey: #666666;
+$black: #212121;
+$pink: #D50283;
+$blue: #005F87;
+
+/* STYLES */
+
+p {
+    color: $dark-grey;
+}
+
+a {
+    cursor: pointer;
+}
+
+.students-background {
+    background-color: $light-grey;
+    min-height: 600px;
+    width: 100%;
+}
+
+.board {
+    height: 30px;
+    width: 100%;
+    background-color: $dark-grey;
+    text-align: center;
+    color: $white;
+    font-size: 1.2em;
+}
+
+.reference {
+    width: 100%;
+    margin: 25px auto;
+    height: 50px;
+}
+
+.reference-box {
+    width: 20%;
+    text-align: center;
+}
+
+.color-reference {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+// ITINERARY COLOR CLASSES
+.frontend {
+    background-color: $pink;
+}
+
+.backend {
+    background-color: $blue;
+}
+
+.net {
+    background-color: $black;
+}
+
+// STUDENT SEAT STYLES
+.student-container {
+    height: 5vw;
+    width: 5vw;
+    background-color: $white;
+}
+
+.student {
+    background-color: $dark-grey;
+    height: 85%;
+    width: 85%;
+    border-radius: 100%;
+    margin: auto;
+}

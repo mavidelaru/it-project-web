@@ -1,1 +1,36 @@
-<p>classroom works!</p>
+<div class="container-fluid my-3 pb-4">
+    <div class="students-background">
+
+        <div class="student-seat d-flex px-4 py-5">
+
+            <!--ngFor student-seat-->
+            <!-- ADD ngIf for color itinerary classes-->
+            <!-- ADD ngIf for space between tables-->
+
+
+            <div class="student-container" *ngFor="let student of studentSeats">
+                <a (click)="studentPopUp()" (mouseover)="showStudentName()" [title]="student.name">
+                    <div class="student"></div>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="board">PIZARRA</div>
+
+    <div class="container reference d-flex justify-content-around">
+        <div class="reference-box">
+            <div class="color-reference net"></div>
+            <p class="pt-2">.Net</p>
+        </div>
+        <div class="reference-box">
+            <div class="color-reference frontend"></div>
+            <p class="pt-2">Front End</p>
+        </div>
+        <div class="reference-box">
+            <div class="color-reference backend"></div>
+            <p class="pt-2">Back End</p>
+        </div>
+    </div>
+</div>

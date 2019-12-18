@@ -50,10 +50,10 @@
 
                 <div class="clearfix pt-4">
                     <div class=" float-right">
-                        <button type="submit" class="btn">Sign in</button>
+                        <button type="submit" class="btn submit-btn">Sign in</button>
                     </div>
                     <div class="pt-1 float-left">
-                        <a class="forgot-password" [routerLink]="['reset-password']">Forgot your password?</a>
+                        <button class="forgot-password" (click)="forgotPassword()">Forgot your password?</button>
                     </div>
                 </div>
                 <!--SUBMIT BUTTON & FORGOT PASSWORD LINK-->

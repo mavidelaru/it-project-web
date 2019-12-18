@@ -26,6 +26,10 @@ import { StudentComponent } from './components/student/student.component';
 import { GenrepieComponent } from './components/stadistics/genrepie/genrepie.component';
 import { PeoplepieComponent } from './components/stadistics/peoplepie/peoplepie.component';
 
+// Services
+import { studentSeatService } from './services/student-seat.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,8 +44,8 @@ import { PeoplepieComponent } from './components/stadistics/peoplepie/peoplepie.
     RevisionComponent,
     StudentComponent,
     GenrepieComponent,
-    PeoplepieComponent,
-  ],
+    PeoplepieComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -49,7 +53,9 @@ import { PeoplepieComponent } from './components/stadistics/peoplepie/peoplepie.
     RouterModule,
     ChartsModule
   ],
-  providers: [],
+  providers: [
+    studentSeatService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
