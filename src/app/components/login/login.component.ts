@@ -16,16 +16,24 @@ export class LoginComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+
     this.loginForm = this.formBuilder.group({
 
-       email: ['', [Validators.required, Validators.email]], 
+       email: ['', [Validators.required, Validators.email]],
        password: ['', [Validators.required, Validators.pattern('(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,16}')
-      ]]  //min 8, max 16 characters / at least: 1 uppercase - 1 lowercase - 1 number - 1 special character  
+      ]]  //min 8, max 16 characters / at least: 1 uppercase - 1 lowercase - 1 number - 1 special character
     });
   }
-  
+
   get f() {
     return this.loginForm.controls;
+  }
+
+  show(){
+
+    document.getElementById('login').className = "d-none";
+    document.getElementById('routerOutlet').className = "col d-block";
+
   }
 
   onSubmit() {
@@ -36,6 +44,11 @@ export class LoginComponent implements OnInit {
     }
     // SUCCESS
     alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.loginForm.value));
+    document.getElementById('menu').className = "col-2";
+    document.getElementById('routerOutlet').className = "col-9";
+    document.getElementById('login').className = "d-none";
   }
+
+
 
 }
