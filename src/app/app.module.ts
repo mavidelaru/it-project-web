@@ -25,6 +25,8 @@ import { RevisionComponent } from './components/revision/revision.component';
 import { StudentComponent } from './components/student/student.component';
 import { GenrepieComponent } from './components/stadistics/genrepie/genrepie.component';
 import { PeoplepieComponent } from './components/stadistics/peoplepie/peoplepie.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { PeoplepieComponent } from './components/stadistics/peoplepie/peoplepie.
     AppRoutingModule,
     ReactiveFormsModule,
     RouterModule,
-    ChartsModule
+    ChartsModule,
+    BrowserAnimationsModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
