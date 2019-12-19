@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -13,7 +13,8 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   submitted = false;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor( private formBuilder: FormBuilder,
+               private router: Router ) { }
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
@@ -36,6 +37,10 @@ export class LoginComponent implements OnInit {
     }
     // SUCCESS
     alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.loginForm.value));
+  }
+
+  forgotPassword() {
+    this.router.navigate( ['/login', 'reset-password'] );
   }
 
 }
