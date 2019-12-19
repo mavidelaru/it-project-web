@@ -8,16 +8,41 @@
 </div>
 <ng-template #template>
     <div class="modal-header">
-        <h4 class="modal-title pull-left">Alumno</h4>
+        <h1 class="modal-title pull-left">Alumno</h1>
         <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
     <div class="modal-body">
-        <p>Alumno: {{selectedStudent.student}}</p>
-        <p>Itinerario: {{selectedStudent.itinerary}}</p>
-        <button type="button" class="btn btn-primary ml-1">Guardar</button>
-        <button type="button" class="btn btn-primary ml-1">Cancelar</button>
-        <button type="button" class="btn btn-primary ml-1">Ir a perfil</button>
+        <h2 class="mt-3">{{selectedStudent.student | uppercase}}</h2>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                checked>
+            <label class="form-check-label" for="exampleRadios1">
+                Front-End
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+                Back-End
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+                .Net
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3"
+                disabled>
+            <label class="form-check-label" for="exampleRadios3">
+                Android
+            </label>
+        </div>
+        <button type="button" class="btn btn-primary ml-1 mt-3" (click)="confirm(); modalRef.hide()">Guardar</button>
+        <button type="button" class="btn btn-primary ml-1 mt-3" (click)="decline(); modalRef.hide()">Cancelar</button>
+        <button type="button" class="btn btn-primary ml-1 mt-3">Ir a perfil</button>
     </div>
 </ng-template>
