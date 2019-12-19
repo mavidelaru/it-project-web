@@ -1,0 +1,5 @@
+<div class="student-container d-inline-block" *ngFor="let student of studentSeats" style="position: relative; top: 10px; left: 10px;">
+    <a (click)="studentPopUp()" (mouseover)="showStudentName()" [title]="student.name">
+        <div class="student"></div>
+    </a>
+</div>

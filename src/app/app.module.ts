@@ -28,6 +28,7 @@ import { PeoplepieComponent } from './components/stadistics/peoplepie/peoplepie.
 
 // Services
 import { studentSeatService } from './services/student-seat.service';
+import { StudentSeatComponent } from './components/student-seat/student-seat.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { studentSeatService } from './services/student-seat.service';
     RevisionComponent,
     StudentComponent,
     GenrepieComponent,
-    PeoplepieComponent
+    PeoplepieComponent,
+    StudentSeatComponent
     ],
   imports: [
     BrowserModule,
