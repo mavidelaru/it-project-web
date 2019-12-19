@@ -26,4 +26,7 @@ export class ClassroomComponent {
   selectStudent(student: Alumne) {
     this.selectedStudent = student;
   }
+
+  confirm() {}
+  decline() {}
 }
