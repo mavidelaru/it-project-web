@@ -48,7 +48,8 @@ import { StudentTableComponent } from './components/student-table/student-table.
     GenrepieComponent,
     PeoplepieComponent,
     StudentSeatComponent,
-    StudentTableComponent    ],
+    StudentTableComponent    
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
