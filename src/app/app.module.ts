@@ -48,7 +48,7 @@ import { StudentTableComponent } from './components/student-table/student-table.
     GenrepieComponent,
     PeoplepieComponent,
     StudentSeatComponent,
-    StudentTableComponent    
+    StudentTableComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +58,8 @@ import { StudentTableComponent } from './components/student-table/student-table.
     ChartsModule
   ],
   providers: [
-    studentSeatService
+    studentSeatService,
+    AlumnoService
   ],
   bootstrap: [AppComponent]
 })
