@@ -7,3 +7,12 @@
         background-color: $pink;
     }
 }
+
+.typed_search {
+    border-color: $light-grey;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-width: 1px;
+    color: $dark-grey;
+    font-style: italic;
+}

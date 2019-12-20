@@ -1,7 +1,11 @@
 <!-- on log out -->
 <app-login id="login" class="d-none"></app-login>
 <!-- on log in -->
-<div id="menu" class="row">
+<div id="menu" class="row mr-0">
     <app-menu class="col-2"></app-menu>
-    <router-outlet></router-outlet>
+    <div class="w-80vw mt-3">
+        <router-outlet></router-outlet>
+    </div>
 </div>
+
+<!-- <app-tables></app-tables> -->

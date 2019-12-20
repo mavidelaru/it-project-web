@@ -6,6 +6,10 @@ import { ClassroomComponent } from './components/classroom/classroom.component';
 import { RevisionComponent } from './components/revision/revision.component';
 import { StudentComponent } from './components/student/student.component';
 
+import { ResetPasswordRequestComponent } from './components/reset-password-request/reset-password-request.component';
+import { LoginComponent } from './components/login/login.component';
+import { CommonModule } from '@angular/common';
+
 
 const routes: Routes = [
   {
@@ -19,11 +23,22 @@ const routes: Routes = [
   },
   {
     path: 'student', component: StudentComponent
+  },
+  {
+    path: 'login/reset-password', component: ResetPasswordRequestComponent
+  },
+  {
+    path: 'login', component: LoginComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes)
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 export class AppRoutingModule { }
