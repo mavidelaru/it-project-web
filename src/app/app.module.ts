@@ -25,11 +25,12 @@ import { RevisionComponent } from './components/revision/revision.component';
 import { StudentComponent } from './components/student/student.component';
 import { GenrepieComponent } from './components/stadistics/genrepie/genrepie.component';
 import { PeoplepieComponent } from './components/stadistics/peoplepie/peoplepie.component';
+import { StudentSeatComponent } from './components/student-seat/student-seat.component';
+import { StudentTableComponent } from './components/student-table/student-table.component';
 
 // Services
 import { studentSeatService } from './services/student-seat.service';
-import { StudentSeatComponent } from './components/student-seat/student-seat.component';
-import { StudentTableComponent } from './components/student-table/student-table.component';
+
 
 
 @NgModule({
