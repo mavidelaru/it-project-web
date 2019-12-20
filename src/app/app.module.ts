@@ -41,7 +41,7 @@ import { PeoplepieComponent } from './components/stadistics/peoplepie/peoplepie.
     StudentComponent,
     StudentSearchComponent,
     GenrepieComponent,
-    PeoplepieComponent,
+    PeoplepieComponent    
   ],
   imports: [
     BrowserModule,
