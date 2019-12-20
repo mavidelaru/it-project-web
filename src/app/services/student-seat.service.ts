@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class studentSeatService {
-    // datos para obtener posición
+    // datos (falsos) para obtener posición
     private studentSeat: StudentSeat[] = [
         {
             name: 'PANTINI, FABRIZIO',
@@ -300,7 +300,7 @@ export class studentSeatService {
     constructor() {
         console.log("Service ready!");
     }
-    // getter de la propiedad studentSeat
+    // getter de studentSeat
     getStudentSeat(): StudentSeat[] {
         return this.studentSeat;
     }
