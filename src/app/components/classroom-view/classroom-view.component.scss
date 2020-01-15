@@ -1,0 +1,79 @@
+/* COLORS */
+
+$white: #FFFFFFFF;
+$light-grey: #E8E8E8;
+$dark-grey: #666666;
+$black: #212121;
+$pink: #D50283;
+$blue: #005F87;
+//
+
+/* STYLES */
+
+p {
+    color: $dark-grey;
+}
+
+.students-background {
+    background-color: $light-grey;
+    min-height: 500px;
+    min-width: 1100px;
+    max-width: 1400px;
+}
+
+.board {
+    //pizarra
+    height: 30px;
+    width: 100%;
+    background-color: $dark-grey;
+    text-align: center;
+    color: $white;
+    font-size: 1.2em;
+    margin-top: 80px;
+}
+
+.reference {
+    width: 100%;
+    margin: 25px auto;
+    height: 50px;
+}
+
+.reference-box {
+    width: 20%;
+    text-align: center;
+}
+
+.color-reference {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+// STUDENT GRID
+.student-grid {
+    //border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 2fr 4fr 4fr 2fr 4fr 2fr;
+    grid-template-rows: 60px 60px 60px 60px;
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+}
+
+.table-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+// ITINERARY COLORS
+.frontend {
+    background-color: $pink;
+}
+
+.backend {
+    background-color: $blue;
+}
+
+.net {
+    background-color: $black;
+}

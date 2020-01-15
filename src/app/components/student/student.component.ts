@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ExerciseService } from '../../services/exercise.service';
+import { Exercise } from '../global/tables/model/exercise';
 
 @Component({
   selector: 'app-student',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private exerciseService: ExerciseService) { }
+
 
   ngOnInit() {
   }

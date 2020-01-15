@@ -1,0 +1,28 @@
+/* COLORS */
+
+$white: #FFFFFFFF;
+$light-grey: #E8E8E8;
+$dark-grey: #666666;
+$black: #212121;
+$pink: #D50283;
+$blue: #005F87;
+
+/* STYLES */
+
+a {
+    cursor: pointer;
+}
+
+.student-container {
+    display: block;
+    background-color: $white;
+    padding: 5%;
+}
+
+.student {
+    background-color: $dark-grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin: auto;
+}
