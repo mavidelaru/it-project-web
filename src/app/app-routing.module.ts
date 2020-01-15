@@ -1,6 +1,7 @@
 
 import { StadisticsComponent } from './components/stadistics/stadistics.component';
 import { ClassroomComponent } from './components/classroom/classroom.component';
+import { ClassroomViewComponent } from './components/classroom-view/classroom-view.component';
 import { RevisionComponent } from './components/revision/revision.component';
 import { StudentComponent } from './components/student/student.component';
 import { Routes, RouterModule } from '@angular/router';
