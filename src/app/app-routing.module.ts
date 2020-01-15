@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { StadisticsComponent } from './components/stadistics/stadistics.component';
-import { ClassroomComponent } from './components/classroom/classroom.component';
+import { ClassroomComponent } from './components/classroom-view/classroom-view.component';
 import { RevisionComponent } from './components/revision/revision.component';
 import { StudentComponent } from './components/student/student.component';
 

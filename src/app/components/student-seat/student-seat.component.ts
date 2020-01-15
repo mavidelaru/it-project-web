@@ -11,7 +11,6 @@ export class StudentSeatComponent implements OnInit {
   studentSeats: StudentSeat[] = [];
 
   constructor( private _studentSeatService: studentSeatService ) {
-    console.log("constructor");
    }
 
   ngOnInit() {
