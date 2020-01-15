@@ -37,7 +37,12 @@ import { studentSeatService } from './services/student-seat.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { LayoutComponent } from './components/layout/layout.component';
+<<<<<<< Updated upstream
 import { StudentPopupComponent } from './components/classroom/student-popup/student-popup.component';
+=======
+import { ExercisesComponent } from './components/student/exercises/exercises.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -58,7 +63,11 @@ import { StudentPopupComponent } from './components/classroom/student-popup/stud
     StudentSeatComponent,
     StudentTableComponent,
     LayoutComponent,
+<<<<<<< Updated upstream
     StudentPopupComponent
+=======
+    ExercisesComponent,
+>>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
@@ -67,7 +76,8 @@ import { StudentPopupComponent } from './components/classroom/student-popup/stud
     ChartsModule,
     BrowserAnimationsModule,
     ModalModule.forRoot(),
-    APP_ROUTING
+    APP_ROUTING,
+    BsDatepickerModule.forRoot()
   ],
   providers: [
     studentSeatService,
