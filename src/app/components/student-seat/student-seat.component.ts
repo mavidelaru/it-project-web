@@ -16,7 +16,7 @@ export class StudentSeatComponent implements OnInit {
   ngOnInit() {
         // iniciate service
         this.studentSeats = this._studentSeatService.getStudentSeat();
-        console.log(this.studentSeats);
+        // console.log(this.studentSeats);
   }
   // click function: show popup with info
   studentPopUp() {
@@ -24,6 +24,6 @@ export class StudentSeatComponent implements OnInit {
   }
   // mouseover function: show student name
   showStudentName() {
-    console.log('show student name');
+    // console.log('show student name');
   }
 }

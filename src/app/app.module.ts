@@ -42,6 +42,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { LayoutComponent } from './components/layout/layout.component';
 import { StudentPopupComponent } from './components/classroom/student-popup/student-popup.component';
 
+import { NgSelect2Module } from 'ng-select2';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,7 +74,8 @@ import { StudentPopupComponent } from './components/classroom/student-popup/stud
     ChartsModule,
     BrowserAnimationsModule,
     ModalModule.forRoot(),
-    APP_ROUTING
+    APP_ROUTING,
+    NgSelect2Module
   ],
   providers: [
     studentSeatService,
