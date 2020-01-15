@@ -20,14 +20,24 @@ import { RouterModule } from '@angular/router';
 import { NewPasswordResetComponent } from './components/login-components/new-password-reset/new-password-reset.component';
 
 import { StadisticsComponent } from './components/stadistics/stadistics.component';
-import { ClassroomComponent } from './components/classroom/classroom.component';
 import { RevisionComponent } from './components/revision/revision.component';
 import { StudentComponent } from './components/student/student.component';
 import { GenrepieComponent } from './components/stadistics/genrepie/genrepie.component';
 import { PeoplepieComponent } from './components/stadistics/peoplepie/peoplepie.component';
+import { StudentSeatComponent } from './components/student-seat/student-seat.component';
+import { StudentTableComponent } from './components/student-table/student-table.component';
+import { ClassroomViewComponent } from './components/classroom-view/classroom-view.component';
+import { ClassroomComponent } from './components/classroom/classroom.component';
+
+
+// Services
+import { studentSeatService } from './services/student-seat.service';
+
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { LayoutComponent } from './components/layout/layout.component';
+import { StudentPopupComponent } from './components/classroom/student-popup/student-popup.component';
 
 @NgModule({
   declarations: [
@@ -40,11 +50,15 @@ import { LayoutComponent } from './components/layout/layout.component';
     NewPasswordResetComponent,
     StadisticsComponent,
     ClassroomComponent,
+    ClassroomViewComponent,
     RevisionComponent,
     StudentComponent,
     GenrepieComponent,
     PeoplepieComponent,
+    StudentSeatComponent,
+    StudentTableComponent,
     LayoutComponent,
+    StudentPopupComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +69,10 @@ import { LayoutComponent } from './components/layout/layout.component';
     ModalModule.forRoot(),
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    studentSeatService,
+    AlumnoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
