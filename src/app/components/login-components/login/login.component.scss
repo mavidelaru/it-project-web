@@ -1,45 +1,10 @@
-/* ANIMATION */
-
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    animation-name: fadeIn;
-}
-
-
-/* COLORS */
-
-$white: #FFFFFFFF;
-$light-grey: #E8E8E8;
-$dark-grey: #666666;
-$black: #212121;
-$pink: #D50283;
-$blue: #005F87;
+@import '../../../../styles.scss';
 
 /* STYLES */
 
 h1 {
     font-size: 2.5em;
-    font-weight: 700;
     color: $pink;
-}
-
-h2 {
-    font-weight: 700;
 }
 
 label {
