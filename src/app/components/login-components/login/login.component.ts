@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -20,12 +19,12 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
 
-       email: ['', [Validators.required, Validators.email]], 
+       email: ['', [Validators.required, Validators.email]],
        password: ['', [Validators.required, Validators.pattern('(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,16}')
-      ]]  //min 8, max 16 characters / at least: 1 uppercase - 1 lowercase - 1 number - 1 special character  
+      ]]  // min 8, max 16 characters / at least: 1 uppercase - 1 lowercase - 1 number - 1 special character
     });
   }
-  
+
   get f() {
     return this.loginForm.controls;
   }
