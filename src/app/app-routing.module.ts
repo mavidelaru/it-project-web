@@ -1,44 +1,27 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
 
 import { StadisticsComponent } from './components/stadistics/stadistics.component';
 import { ClassroomComponent } from './components/classroom/classroom.component';
+import { ClassroomViewComponent } from './components/classroom-view/classroom-view.component';
 import { RevisionComponent } from './components/revision/revision.component';
 import { StudentComponent } from './components/student/student.component';
+import { Routes, RouterModule } from '@angular/router';
 
-import { ResetPasswordRequestComponent } from './components/reset-password-request/reset-password-request.component';
-import { LoginComponent } from './components/login/login.component';
-import { CommonModule } from '@angular/common';
+import { ResetPasswordRequestComponent } from './components/login-components/reset-password-request/reset-password-request.component';
+import { LoginComponent } from './components/login-components/login/login.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { LAYOUT_ROUTES } from './components/layout/layout.routing';
 
 
-const routes: Routes = [
+const APP_ROUTES: Routes = [
+  { path: 'login', component: LoginComponent },
+  { path: 'login/reset-password', component: ResetPasswordRequestComponent },
   {
-    path: 'stadistics', component: StadisticsComponent
+    path: 'layout',
+    component: LayoutComponent,
+    children: LAYOUT_ROUTES
   },
-  {
-    path: 'classroom', component: ClassroomComponent
-  },
-  {
-    path: 'revision', component: RevisionComponent
-  },
-  {
-    path: 'student', component: StudentComponent
-  },
-  {
-    path: 'reset-password', component: ResetPasswordRequestComponent
-  },
-  {
-    path: 'login', component: LoginComponent
-  }
+  { path: '**', pathMatch: 'full', redirectTo: 'login' }
 ];
 
-@NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [
-    RouterModule
-  ]
-})
-export class AppRoutingModule { }
+
+export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);
