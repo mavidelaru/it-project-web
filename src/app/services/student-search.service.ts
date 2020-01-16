@@ -8,37 +8,38 @@ import alumnos from '../../assets/json/alumnos.json';
   providedIn: 'root'
 })
 export class StudentSearchService {
-  
+
 
   StudentSample: any = alumnos;
   studentList: StudentSearch[] = [];
 
-  
+
   constructor() {
-    for (let i = 0; i < this.StudentSample.length; i++){
-      let student: StudentSearch = new StudentSearch(`a${i}`, this.StudentSample[i].name, this.StudentSample[i].lastname);
+    for (let i = 0; i < this.StudentSample.length; i++) {
+      const student: StudentSearch = new StudentSearch(`a${i}`, this.StudentSample[i].name, this.StudentSample[i].lastname);
       this.studentList.push(student);
     }
-      
+
   }
 
   filterNames(query: string, type: number) {
-    //1= firstname, 2= Lastname
-    return this.studentList.filter(function(el) {
-        switch(type){
+    // 1= firstname, 2= Lastname
+    return this.studentList.filter((el) => {
+        switch (type) {
           case 1:
-            return el.FirstName.toLowerCase().indexOf(query.toLowerCase()) > -1;            
+            return el.FirstName.toLowerCase().indexOf(query.toLowerCase()) > -1;
           case 2:
-            return el.LastName.toLowerCase().indexOf(query.toLowerCase()) > -1;            
+            return el.LastName.toLowerCase().indexOf(query.toLowerCase()) > -1;
         }
-    })
+    });
   }
 
-  getStudentByName(filter:string): StudentSearch[]{
-    // console.log(filter);
-    // console.log(this.studentList);
-    let result = this.filterNames(filter, 1);    
-    // console.log(result);    
+  fullName(name: string, surname: string): string {
+    return `${name} ${surname}`;
+  }
+
+  getStudentByName(filter: string): StudentSearch[] {
+    const result = this.filterNames(filter, 1);
     return result;
   }
 

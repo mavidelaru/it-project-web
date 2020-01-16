@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { StudentSearch } from './model/student-search';
 import { StudentSearchService } from '../../../services/student-search.service';
 import { Select2OptionData } from 'ng2-select2';
-// import * as $ from 'jquery';
+
 
 
 @Component({
@@ -13,74 +13,53 @@ import { Select2OptionData } from 'ng2-select2';
 export class StudentSearchComponent implements OnInit {
 
 
-
-  constructor(private studentSearchService: StudentSearchService) { }
-
-  students: StudentSearch[] = [];
+  students: StudentSearch [] = [];
+  studentNames: string [] = [];
+  nameList: Select2OptionData [] = [];
   search = '';
 
-  public exampleData: Array<Select2OptionData>;
+  optionsSelect: Select2Options; // for options of the select2
 
-  optionsSelect: Select2Options;
+  constructor(private studentSearchService: StudentSearchService) {
+    this.students = this.studentSearchService.getStudentByName(this.search);
+    let i = 0; // index
+    for (const student of this.students) {
+      this.studentNames.push(this.studentSearchService.fullName(student.FirstName, student.LastName));
+      this.nameList.push({id: student.Id, text: this.studentNames[i]});
+      i++;
+    }
+    // console.log(this.nameList);
+  }
 
-  
+  // TODO: devolver el valor del select para mostrar el alumno seleccionado
+  searchQuery(q: string) {
+    console.log(q);
+  }
 
-  // searchQuery() {
-  //   this.search = $('#search').select2().val();
-  //   console.log(this.search);
-  // }
-
-
+  onSubmit(value: any) {
+    console.log(value.value);
+  }
 
   ngOnInit() {
 
+    // matcher return only the coincidence term that starts from the beginning of the word only
     this.optionsSelect = {
-      placeholder: "Select option...",
+      theme: 'bootstrap',
+      placeholder: 'Buscar Alumno...',
       allowClear: true,
-      width: "100%"
-    }
-
-    this.exampleData = [
-      {
-        id: 'basic1',
-        text: 'Basic 1'
-      },
-      {
-        id: 'basic2',
-        disabled: true,
-        text: 'Basic 2'
-      },
-      {
-        id: 'basic3',
-        text: 'Basic 3'
-      },
-      {
-        id: 'basic4',
-        text: 'Basic 4'
+      width: '100%',
+      matcher: (term: string, text: string) => {
+        return text.toUpperCase().indexOf(term.toUpperCase()) === 0;
       }
-    ];
-
-    // console.log(this.exampleData);
-    
-
-    // TODO: segun el filtro de los radio buttons hacer la búsqueda del alumno
-
-    // TODO: pasar datos
-    // $('.js-example-basic-single').select2();
-    // $(() => {
-    //   $('#search').select2({ width: '20em' });
-    // });
-
-    // $('#search').select2().on('select2:select', function(e: any) {
-    //   const selectedElement = $(e.currentTarget);
-    //   const selectVal = selectedElement.val();
-    //   this.search = selectVal;
-    //   console.log(this.search);
-    // });
-
-    // this.students = this.studentSearchService.getStudentByName(this.search);
-
+    };
 
   }
+
+
+  // TODO: segun el filtro de los radio buttons hacer la búsqueda del alumno
+
+  // TODO: pasar datos
+
+
 
 }
