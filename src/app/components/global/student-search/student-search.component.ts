@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StudentSearch } from './model/student-search';
 import { StudentSearchService } from '../../../services/student-search.service';
-import { Select2OptionData } from 'ng-select2';
+import { Select2OptionData } from 'ng2-select2';
 // import * as $ from 'jquery';
 
 
@@ -21,6 +21,10 @@ export class StudentSearchComponent implements OnInit {
 
   public exampleData: Array<Select2OptionData>;
 
+  optionsSelect: Select2Options;
+
+  
+
   // searchQuery() {
   //   this.search = $('#search').select2().val();
   //   console.log(this.search);
@@ -29,6 +33,12 @@ export class StudentSearchComponent implements OnInit {
 
 
   ngOnInit() {
+
+    this.optionsSelect = {
+      placeholder: "Select option...",
+      allowClear: true,
+      width: "100%"
+    }
 
     this.exampleData = [
       {
@@ -49,6 +59,9 @@ export class StudentSearchComponent implements OnInit {
         text: 'Basic 4'
       }
     ];
+
+    // console.log(this.exampleData);
+    
 
     // TODO: segun el filtro de los radio buttons hacer la búsqueda del alumno
 
