@@ -39,8 +39,8 @@ export class StudentSearchService {
   }
 
   getStudentByName(filter: string): StudentSearch[] {
-    const result = this.filterNames(filter, 1);
-    return result;
+    console.log(filter);
+    return this.filterNames(filter, 1);
   }
 
   // getStudentBySurname(filter:string): StudentSearch[]{

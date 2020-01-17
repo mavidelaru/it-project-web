@@ -32,12 +32,12 @@ export class StudentSearchComponent implements OnInit {
   }
 
   // TODO: devolver el valor del select para mostrar el alumno seleccionado
-  searchQuery(q: string) {
-    console.log(q);
+  searchQuery(q: any) {
+    this.search = q.data[0].text;
   }
 
-  onSubmit(value: any) {
-    console.log(value.value);
+  onSubmit() {    
+    console.log(this.search);
   }
 
   ngOnInit() {
@@ -48,9 +48,9 @@ export class StudentSearchComponent implements OnInit {
       placeholder: 'Buscar Alumno...',
       allowClear: true,
       width: '100%',
-      matcher: (term: string, text: string) => {
-        return text.toUpperCase().indexOf(term.toUpperCase()) === 0;
-      }
+      // matcher: (term: string, text: string) => {
+      //   return text.toUpperCase().indexOf(term.toUpperCase()) === 0;
+      // }
     };
 
   }

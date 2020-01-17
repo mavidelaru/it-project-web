@@ -1,5 +1,6 @@
 <div class="row justify-content-center m-3">
-    <form class="form-inline mb-2">
+    <!-- TODO: modificar el listado para añadir el filtro de búsqueda -->
+    <form #options class="form-inline mb-2">
         <div class="form-check-inline">
             <label class="form-check-label small">
               <input type="radio" class="form-check-input" name="optradio" checked="checked">Nombre completo
@@ -16,21 +17,21 @@
             </label>
         </div>
     </form>
+
     <form class="form-inline col-12 justify-content-center">
-        
-      <!-- TODO: añadir ventana desplegable mostrando el resultado de la búsqueda -->
+      
       <select2 id="search-select" 
                class="form-control mr-2 col-6 col-sm-8 col-md-10"
                name="search-select"
-               #searchSelect
-               ngModel
+               (valueChanged)="searchQuery($event)"
                [data]="nameList"
                [cssImport]="true" 
                [options]="optionsSelect">
                <option></option>
       </select2>
 
-      <button (click)="onSubmit(searchSelect.value)"
+      <button [disabled]="(search == '')? 'disabled' : ''"
+              (click)="onSubmit()"
               class="btn btn-outline-pink" 
               type="submit">Buscar</button>
 
