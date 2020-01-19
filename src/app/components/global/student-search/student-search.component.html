@@ -1,22 +1,17 @@
 <div class="row justify-content-center m-3">
     <!-- TODO: modificar el listado para añadir el filtro de búsqueda -->
-    <form #options class="form-inline mb-2">
-        <div class="form-check-inline">
-            <label class="form-check-label small">
-              <input type="radio" class="form-check-input" name="optradio" checked="checked">Nombre completo
-            </label>
-        </div>
-        <div class="form-check-inline">
-            <label class="form-check-label small">
-              <input type="radio" class="form-check-input" name="optradio">Solo Nombre
-            </label>
-        </div>
-        <div class="form-check-inline">
-            <label class="form-check-label small">
-              <input type="radio" class="form-check-input" name="optradio">Solo Apellido
-            </label>
-        </div>
+    <form class="form-inline mb-2">
+      <div *ngFor="let filter of filters; let i = index" class="form-check-inline">
+        <label class="form-check-label small">
+          <input [(ngModel)]="filterOptionValue" [value]="filter.value" 
+                 (change)="filterOption()" 
+                 type="radio" class="form-check-input" name="optradio">
+          {{ filter.name }}
+        </label>
+      </div>
+        
     </form>
+
 
     <form class="form-inline col-12 justify-content-center">
       

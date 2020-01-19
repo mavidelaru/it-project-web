@@ -16,7 +16,14 @@ export class StudentSearchComponent implements OnInit {
   students: StudentSearch [] = [];
   studentNames: string [] = [];
   nameList: Select2OptionData [] = [];
-  search = '';
+  search = ''; // id from student itself
+
+  filterOptionValue = null;
+  filters = [
+    { name: 'Nombre Completo', value: 'fullname'},
+    { name: 'Solo Nombre', value: 'firstname'},
+    { name: 'Solo Apellido', value: 'lastname'}
+  ];
 
   optionsSelect: Select2Options; // for options of the select2
 
@@ -33,10 +40,11 @@ export class StudentSearchComponent implements OnInit {
 
   // TODO: devolver el valor del select para mostrar el alumno seleccionado
   searchQuery(q: any) {
-    this.search = q.data[0].text;
+    this.search = q.data[0].id;
   }
 
-  onSubmit() {    
+  onSubmit() {
+    console.log(this.filterOptionValue);
     console.log(this.search);
   }
 
@@ -57,6 +65,9 @@ export class StudentSearchComponent implements OnInit {
 
 
   // TODO: segun el filtro de los radio buttons hacer la búsqueda del alumno
+  filterOption() {
+    console.log(this.filterOptionValue);
+  }
 
   // TODO: pasar datos
 
