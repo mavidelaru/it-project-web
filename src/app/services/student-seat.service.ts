@@ -315,14 +315,6 @@ export class StudentSeatService {
         return this.students;
     }
 
-    getStudentPosition() {
-        let seat;
-        for (let i = 0; i<this.students.length; i++) {
-            seat = this.students[i].position;
-        }
-        console.log(seat);
-    } 
-
 }
 
 // corregir interface con datos reales

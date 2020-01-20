@@ -26,7 +26,6 @@ import { StudentSearchComponent } from './components/global/student-search/stude
 
 import { GenrepieComponent } from './components/stadistics/genrepie/genrepie.component';
 import { PeoplepieComponent } from './components/stadistics/peoplepie/peoplepie.component';
-import { StudentSeatComponent } from './components/student-seat/student-seat.component';
 import { ClassroomViewComponent } from './components/classroom-view/classroom-view.component';
 import { ClassroomComponent } from './components/classroom/classroom.component';
 
@@ -42,6 +41,7 @@ import { StudentPopupComponent } from './components/classroom/student-popup/stud
 import { StudentPositionComponent } from './components/classroom/student-position/student-position.component';
 
 import { Select2Module } from 'ng2-select2';
+import { StudentComponent } from './components/student/student.component';
 
 
 @NgModule({
@@ -59,11 +59,11 @@ import { Select2Module } from 'ng2-select2';
     RevisionComponent,
     GenrepieComponent,
     PeoplepieComponent,
-    StudentSeatComponent,
     LayoutComponent,
     StudentPopupComponent,
     StudentPositionComponent,
-    StudentSearchComponent
+    StudentSearchComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,
