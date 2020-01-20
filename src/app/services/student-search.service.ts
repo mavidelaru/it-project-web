@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { StudentSearch } from '../components/global/student-search/model/student-search';
+import { StudentSearch } from '../models/student-search';
 import alumnos from '../../assets/json/alumnos.json';
 
 
@@ -21,6 +21,8 @@ export class StudentSearchService {
     }
 
   }
+
+  // FIXME: clean functions if are not used
 
   filterNames(query: string, type: number) {
     // 1= firstname, 2= Lastname

@@ -1,22 +1,9 @@
-<div class="row justify-content-center m-3">
-    <!-- TODO: modificar el listado para añadir el filtro de búsqueda -->
-    <form class="form-inline mb-2">
-      <div *ngFor="let filter of filters; let i = index" class="form-check-inline">
-        <label class="form-check-label small">
-          <input [(ngModel)]="filterOptionValue" [value]="filter.value" 
-                 (change)="filterOption()" 
-                 type="radio" class="form-check-input" name="optradio">
-          {{ filter.name }}
-        </label>
-      </div>
-        
-    </form>
-
-
-    <form class="form-inline col-12 justify-content-center">
+<div class="m-3">
+    
+    <form class="form-inline">
       
       <select2 id="search-select" 
-               class="form-control mr-2 col-6 col-sm-8 col-md-10"
+               class="form-control mr-2 "
                name="search-select"
                (valueChanged)="searchQuery($event)"
                [data]="nameList"

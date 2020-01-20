@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { StudentSearch } from './model/student-search';
+import { StudentSearch } from '../../../models/student-search';
 import { StudentSearchService } from '../../../services/student-search.service';
 import { Select2OptionData } from 'ng2-select2';
 
@@ -18,14 +18,7 @@ export class StudentSearchComponent implements OnInit {
   nameList: Select2OptionData [] = [];
   search = ''; // id from student itself
 
-  filterOptionValue = null;
-  filters = [
-    { name: 'Nombre Completo', value: 'fullname'},
-    { name: 'Solo Nombre', value: 'firstname'},
-    { name: 'Solo Apellido', value: 'lastname'}
-  ];
-
-  optionsSelect: Select2Options; // for options of the select2
+   optionsSelect: Select2Options; // select2 options variable
 
   constructor(private studentSearchService: StudentSearchService) {
     this.students = this.studentSearchService.getStudentByName(this.search);
@@ -35,42 +28,27 @@ export class StudentSearchComponent implements OnInit {
       this.nameList.push({id: student.Id, text: this.studentNames[i]});
       i++;
     }
-    // console.log(this.nameList);
   }
 
-  // TODO: devolver el valor del select para mostrar el alumno seleccionado
+  // return the stundent's id from the select 
   searchQuery(q: any) {
     this.search = q.data[0].id;
   }
 
   onSubmit() {
-    console.log(this.filterOptionValue);
+    // TODO: add conection with the API
     console.log(this.search);
   }
 
   ngOnInit() {
-
-    // matcher return only the coincidence term that starts from the beginning of the word only
+    
     this.optionsSelect = {
       theme: 'bootstrap',
       placeholder: 'Buscar Alumno...',
       allowClear: true,
-      width: '100%',
-      // matcher: (term: string, text: string) => {
-      //   return text.toUpperCase().indexOf(term.toUpperCase()) === 0;
-      // }
+      width: '100%',      
     };
 
   }
-
-
-  // TODO: segun el filtro de los radio buttons hacer la búsqueda del alumno
-  filterOption() {
-    console.log(this.filterOptionValue);
-  }
-
-  // TODO: pasar datos
-
-
 
 }
