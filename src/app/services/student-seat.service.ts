@@ -1,18 +1,23 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class studentSeatService {
+export class StudentSeatService {
     // datos (falsos) para obtener posición
-    private studentSeat: StudentSeat[] = [
+    private students: StudentSeat[] = [
         {
             name: 'PANTINI, FABRIZIO',
             itinerary: 'Front End',
-            position: 1   // x, y ?
+            position: 1
         },
         {
             name: 'KONTAXIS, PANAGIOTIS',
             itinerary: 'Back End',
             position: 2
+        },
+        {
+            name: 'SOMEONE ANYONE',
+            itinerary: 'Front End',
+            position: 3
         },
         {
             name: 'SANCHEZ ABAD, JAVIER',
@@ -252,26 +257,26 @@ export class studentSeatService {
         {
             name: 'ASENSIO GARCIA, MARIO',
             itinerary: 'Front End',
-            position: 51
+            position: 52
         },
         {
             name: 'PEREIRA, EVANDRO',
             itinerary: 'Back End',
-            position: 52
+            position: 51
         },
         {
             name: 'ELIAS LAIRET, ALI TIUNA',
             itinerary: 'Back End',
-            position: 53
-        },
-        {
-            name: 'MAGDALENA CATALA, RAUL',
-            itinerary: 'Back End',
             position: 54
         },
         {
-            name: 'OGNIEVA, OLGA',
-            itinerary: 'Back End',
+            name: '',
+            itinerary: '',
+            position: 53
+        },
+        {
+            name: '',
+            itinerary: '',
             position: 55
         },
         {
@@ -287,26 +292,40 @@ export class studentSeatService {
         {
             name: 'PAZOS ANANIA, EMILIANO',
             itinerary: 'Back End',
-            position: 58
+            position: 59
         },
         {
-            name: 'MARTINEZ ESCOLAR, XAVIER',
+            name: '',
+            itinerary: '',
+            position: 60
+        },
+        {
+            name: 'SOMEONE ANYONE',
             itinerary: 'Front End',
-            position: 59
+            position: 58
         }
 
     ];
 
     constructor() {
-        console.log("Service ready!");
+        console.log('Service ready!');
     }
-    // getter de studentSeat
+
     getStudentSeat(): StudentSeat[] {
-        return this.studentSeat;
+        return this.students;
     }
+
+    getStudentPosition() {
+        let seat;
+        for (let i = 0; i<this.students.length; i++) {
+            seat = this.students[i].position;
+        }
+        console.log(seat);
+    } 
+
 }
 
-// corregir interface segun datos reales
+// corregir interface con datos reales
 export interface StudentSeat {
     name: string;
     itinerary: string;
