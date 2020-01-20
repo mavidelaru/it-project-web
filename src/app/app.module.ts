@@ -22,27 +22,26 @@ import { NewPasswordResetComponent } from './components/login-components/new-pas
 
 import { StadisticsComponent } from './components/stadistics/stadistics.component';
 import { RevisionComponent } from './components/revision/revision.component';
-import { StudentComponent } from './components/student/student.component';
 import { StudentSearchComponent } from './components/global/student-search/student-search.component';
 
 import { GenrepieComponent } from './components/stadistics/genrepie/genrepie.component';
 import { PeoplepieComponent } from './components/stadistics/peoplepie/peoplepie.component';
-import { StudentSeatComponent } from './components/student-seat/student-seat.component';
-import { StudentTableComponent } from './components/student-table/student-table.component';
 import { ClassroomViewComponent } from './components/classroom-view/classroom-view.component';
 import { ClassroomComponent } from './components/classroom/classroom.component';
 
 
 // Services
-import { studentSeatService } from './services/student-seat.service';
+import { StudentSeatService } from './services/student-seat.service';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { LayoutComponent } from './components/layout/layout.component';
 import { StudentPopupComponent } from './components/classroom/student-popup/student-popup.component';
+import { StudentPositionComponent } from './components/classroom/student-position/student-position.component';
 
 import { Select2Module } from 'ng2-select2';
+import { StudentComponent } from './components/student/student.component';
 
 
 @NgModule({
@@ -58,14 +57,13 @@ import { Select2Module } from 'ng2-select2';
     ClassroomComponent,
     ClassroomViewComponent,
     RevisionComponent,
-    StudentComponent,
     GenrepieComponent,
     PeoplepieComponent,
-    StudentSeatComponent,
-    StudentTableComponent,
     LayoutComponent,
     StudentPopupComponent,
-    StudentSearchComponent
+    StudentPositionComponent,
+    StudentSearchComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +77,7 @@ import { Select2Module } from 'ng2-select2';
     Select2Module
   ],
   providers: [
-    studentSeatService,
+    StudentSeatService,
     AlumnoService
   ],
   bootstrap: [AppComponent]

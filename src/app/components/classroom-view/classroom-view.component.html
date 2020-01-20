@@ -4,95 +4,146 @@
         <div class="student-grid">
 
             <!--row 1-->
-            <app-student-table class="invisible"></app-student-table>
-
-            <div class="table-4">
-                <app-student-table></app-student-table>
-                <app-student-table></app-student-table>
+            <div class="table-2 invisible">
+                <!--no-table-->
             </div>
 
             <div class="table-4">
-                <app-student-table></app-student-table>
-                <app-student-table></app-student-table>
+                <!--posiciones 1,2,3,4-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:0:4" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
             </div>
 
-            <app-student-table class="invisible"></app-student-table>
+            <div class="table-4">
+                <!--posiciones 5,6,7,8-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:4:8" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
+            </div>
+
+            <div class="table-2 invisible">
+                <!--no-table-->
+            </div>
 
             <div class="table-4 invisible">
-                <app-student-table></app-student-table>
-                <app-student-table></app-student-table>
+                <!--no-table-->
             </div>
 
-            <app-student-table></app-student-table>
+            <div class="table-2">
+                <!--posiciones 9,10-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:8:10" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
+            </div>
             <!--end row 1-->
 
             <!--row 2-->
-            <app-student-table></app-student-table>
-
-            <div class="table-4">
-                <app-student-table></app-student-table>
-                <app-student-table></app-student-table>
+            <div class="table-2">
+                <!--posiciones 11,12-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:10:12" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
             </div>
 
             <div class="table-4">
-                <app-student-table></app-student-table>
-                <app-student-table></app-student-table>
+                <!--posiciones 13,14,15,16-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:12:16" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
             </div>
-
-            <app-student-table></app-student-table>
 
             <div class="table-4">
-                <app-student-table></app-student-table>
-                <app-student-table></app-student-table>
+                <!--posiciones 17,18,19,20-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:16:20" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
             </div>
 
-            <app-student-table></app-student-table>
+            <div class="table-2">
+                <!--posiciones 21,22-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:20:22" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
+            </div>
+
+            <div class="table-4">
+                <!--posiciones 23,24,25,26-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:22:26" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
+            </div>
+
+            <div class="table-2">
+                <!--posiciones 27,28-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:26:28" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
+            </div>
             <!--end row 2-->
 
             <!--row 3-->
-            <app-student-table></app-student-table>
-
-            <div class="table-4">
-                <app-student-table></app-student-table>
-                <app-student-table></app-student-table>
+            <div class="table-2">
+                <!--posiciones 29,30-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:28:30" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
             </div>
 
             <div class="table-4">
-                <app-student-table></app-student-table>
-                <app-student-table></app-student-table>
+                <!--posiciones 31,32,33,34-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:30:34" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
             </div>
-
-            <app-student-table></app-student-table>
 
             <div class="table-4">
-                <app-student-table></app-student-table>
-                <app-student-table></app-student-table>
+                <!--posiciones 35,36,37,38-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:34:38" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
             </div>
 
-            <app-student-table></app-student-table>
+            <div class="table-2">
+                <!--posiciones 39,40-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:38:40" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
+            </div>
+
+            <div class="table-4">
+                <!--posiciones 41,42, 43, 44-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:40:44" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
+            </div>
+
+            <div class="table-2">
+                <!--posiciones 45,46-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:44:46" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
+            </div>
             <!--end row 3-->
 
             <!--row 4-->
-            <app-student-table class="invisible"></app-student-table>
 
-            <div class="table-4">
-                <app-student-table></app-student-table>
-                <app-student-table></app-student-table>
+            <div class="table-2 invisible">
+                <!--no-table-->
             </div>
 
             <div class="table-4">
-                <app-student-table></app-student-table>
-                <app-student-table></app-student-table>
+                <!--posiciones 47,48,49,50-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:46:50" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
             </div>
-
-            <app-student-table class="invisible"></app-student-table>
 
             <div class="table-4">
-                <app-student-table></app-student-table>
-                <app-student-table></app-student-table>
+                <!--posiciones 51,52,53,54-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:50:54" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
             </div>
 
-            <app-student-table></app-student-table>
+            <div class="table-2 invisible">
+                <!--no-table-->
+            </div>
+
+            <div class="table-4">
+                <!--posiciones 55,56,57,58-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:54:58" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
+            </div>
+
+            <div class="table-2">
+                <!--posiciones 59,60-->
+                <app-student-position [student]="student" *ngFor="let student of students | slice:58:60" (click)="selectStudent(student)" [title]="student.position">
+                </app-student-position>
+            </div>
             <!--end row 4-->
 
         </div>
@@ -101,8 +152,6 @@
         <div class="board">PIZARRA</div>
     </div>
     <!--student background-->
-
-
     <div class="container reference d-flex justify-content-around">
         <div class="reference-box">
             <div class="color-reference net"></div>
@@ -115,6 +164,10 @@
         <div class="reference-box">
             <div class="color-reference backend"></div>
             <p class="pt-2">Back End</p>
+        </div>
+        <div class="reference-box">
+            <div class="color-reference empty"></div>
+            <p class="pt-2">Libre</p>
         </div>
     </div>
 </div>
