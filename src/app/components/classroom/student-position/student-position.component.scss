@@ -1,0 +1,39 @@
+@import '../../../../styles.scss';
+
+/* STYLES */
+
+.student-container {
+    background-color: $white;
+    height: 50px;
+    width: 50px;
+    padding-top: 2.5px;
+    padding-left: 2.5px;
+    margin-top: 4.5px;
+    margin-left: 2px;
+}
+
+.student {
+    text-align: center;
+    background-color: $light-grey;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    margin: auto;
+    border: none;
+}
+
+.front-end {
+    background-color: $pink;
+}
+
+.back-end {
+    background-color: $blue;
+}
+
+.net {
+    background-color: $black;
+}
+
+.empty {
+    background-color: #CCCCCC;
+}

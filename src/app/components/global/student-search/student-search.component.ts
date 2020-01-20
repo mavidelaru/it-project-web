@@ -30,7 +30,7 @@ export class StudentSearchComponent implements OnInit {
     }
   }
 
-  // return the stundent's id from the select 
+  // return the stundent's id from the select
   searchQuery(q: any) {
     this.search = q.data[0].id;
   }
@@ -38,15 +38,16 @@ export class StudentSearchComponent implements OnInit {
   onSubmit() {
     // TODO: add conection with the API
     console.log(this.search);
+    this.studentSearchService.idStudent = this.search;
   }
 
   ngOnInit() {
-    
+
     this.optionsSelect = {
       theme: 'bootstrap',
       placeholder: 'Buscar Alumno...',
       allowClear: true,
-      width: '100%',      
+      width: '100%',
     };
 
   }

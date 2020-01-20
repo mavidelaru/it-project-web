@@ -10,8 +10,9 @@ import alumnos from '../../assets/json/alumnos.json';
 export class StudentSearchService {
 
 
-  StudentSample: any = alumnos;
-  studentList: StudentSearch[] = [];
+  public StudentSample: any = alumnos;
+  public studentList: StudentSearch[] = [];
+  public idStudent: string;
 
 
   constructor() {
@@ -41,7 +42,7 @@ export class StudentSearchService {
   }
 
   getStudentByName(filter: string): StudentSearch[] {
-    console.log(filter);
+    // console.log(filter);
     return this.filterNames(filter, 1);
   }
 
