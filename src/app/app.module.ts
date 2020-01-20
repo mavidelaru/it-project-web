@@ -43,6 +43,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { StudentPopupComponent } from './components/classroom/student-popup/student-popup.component';
 
 import { Select2Module } from 'ng2-select2';
+import { TimeBarComponent } from './components/student/time-bar/time-bar.component';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { Select2Module } from 'ng2-select2';
     StudentTableComponent,
     LayoutComponent,
     StudentPopupComponent,
-    StudentSearchComponent
+    StudentSearchComponent,
+    TimeBarComponent
   ],
   imports: [
     BrowserModule,
