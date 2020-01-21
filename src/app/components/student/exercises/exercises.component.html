@@ -13,22 +13,11 @@
                 <td>{{exercise.name}}</td>
                 <td>{{exercise.state}}</td>
                 <td>{{exercise.date | date:"MM/dd/yy" }}</td>
-                <td> <button type="button" class="btn state-btn">Cambiar estado</button></td>
+                <td>
+                    <app-exercise-modal></app-exercise-modal>
+                </td>
             </tr>
 
         </tbody>
     </table>
-
-    <label for="start">Start date:</label>
-
-    <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-
-
-
-
-    <div class="row">
-        <div class="pr-3 pb-3">
-            <bs-datepicker-inline [bsValue]="bsInlineValue"></bs-datepicker-inline>
-        </div>
-    </div>
 </div>

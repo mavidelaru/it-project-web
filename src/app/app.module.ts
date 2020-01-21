@@ -46,6 +46,7 @@ import { StudentPositionComponent } from './components/classroom/student-positio
 
 import { Select2Module } from 'ng2-select2';
 import { StudentComponent } from './components/student/student.component';
+import { ExerciseModalComponent } from './components/global/exercise-modal/exercise-modal.component';
 
 
 @NgModule({
@@ -70,7 +71,8 @@ import { StudentComponent } from './components/student/student.component';
     StudentPopupComponent,
     StudentPositionComponent,
     StudentSearchComponent,
-    StudentComponent
+    StudentComponent,
+    ExerciseModalComponent
 
   ],
   imports: [
