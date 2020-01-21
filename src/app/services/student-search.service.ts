@@ -11,8 +11,8 @@ export class StudentSearchService {
 
 
   public StudentSample: any = alumnos;
-  public studentList: StudentSearch[] = [];
-  public idStudent: string;
+  public studentList: StudentSearch[] = [];  
+  public page: string;
 
 
   constructor() {
@@ -29,10 +29,12 @@ export class StudentSearchService {
     // 1= firstname, 2= Lastname
     return this.studentList.filter((el) => {
         switch (type) {
+          case 0:
+            return el.Id.indexOf(query) > -1;
           case 1:
             return el.FirstName.toLowerCase().indexOf(query.toLowerCase()) > -1;
           case 2:
-            return el.LastName.toLowerCase().indexOf(query.toLowerCase()) > -1;
+            return el.LastName.toLowerCase().indexOf(query.toLowerCase()) > -1;          
         }
     });
   }

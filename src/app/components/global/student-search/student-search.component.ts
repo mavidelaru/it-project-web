@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { StudentSearch } from '../../../models/student-search';
 import { StudentSearchService } from '../../../services/student-search.service';
 import { Select2OptionData } from 'ng2-select2';
+import { Router } from '@angular/router';
 
 
 
@@ -20,7 +21,8 @@ export class StudentSearchComponent implements OnInit {
 
    optionsSelect: Select2Options; // select2 options variable
 
-  constructor(private studentSearchService: StudentSearchService) {
+  constructor(private studentSearchService: StudentSearchService,
+              private route: Router) {    
     this.students = this.studentSearchService.getStudentByName(this.search);
     let i = 0; // index
     for (const student of this.students) {
@@ -38,7 +40,15 @@ export class StudentSearchComponent implements OnInit {
   onSubmit() {
     // TODO: add conection with the API
     console.log(this.search);
-    this.studentSearchService.idStudent = this.search;
+    switch (this.studentSearchService.page) {
+      case 'classroom':
+          console.warn('mostrar alumno en el diagrama');
+        break;
+      case 'student':
+          console.log('student loading');
+          this.route.navigate(['/layout/student', this.search]);          
+        break;
+    }
   }
 
   ngOnInit() {

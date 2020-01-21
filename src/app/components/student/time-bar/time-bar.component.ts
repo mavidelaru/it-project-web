@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StudentSearchService } from '../../../services/student-search.service';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -19,7 +20,8 @@ export class TimeBarComponent implements OnInit {
   deadLine: number;
 
 
-  constructor(private stu: StudentSearchService) { }
+  constructor(private stu: StudentSearchService,
+              private aRoute: ActivatedRoute) { }
 
   ngOnInit() {
     this.remainingHoursWeek();
@@ -27,7 +29,19 @@ export class TimeBarComponent implements OnInit {
 
   remainingHoursWeek() {
     console.log(this.today.getDay());
-    console.log(this.stu.idStudent);
+    this.aRoute.params.subscribe( params => {
+      // console.log(Object.keys(params).length);
+      if (Object.keys(params).length > 0) { 
+        const result = this.stu.filterNames(params.id, 0);
+        
+        // TODO: obtener fecha final del array studentsample si coincide con el resultado de la búsqueda
+        for (const student of this.stu.StudentSample) {
+          if (student.name == result[0].FirstName && student.lastname == result[0].LastName){
+            console.log(student.limitDate);
+          }
+        }
+      }
+    });
   }
 
 
