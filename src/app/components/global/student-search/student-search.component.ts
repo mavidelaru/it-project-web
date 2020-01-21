@@ -22,7 +22,7 @@ export class StudentSearchComponent implements OnInit {
    optionsSelect: Select2Options; // select2 options variable
 
   constructor(private studentSearchService: StudentSearchService,
-              private route: Router) {    
+              private route: Router) {
     this.students = this.studentSearchService.getStudentByName(this.search);
     let i = 0; // index
     for (const student of this.students) {
@@ -39,14 +39,14 @@ export class StudentSearchComponent implements OnInit {
 
   onSubmit() {
     // TODO: add conection with the API
-    console.log(this.search);
+    // console.log(this.search);
     switch (this.studentSearchService.page) {
       case 'classroom':
-          console.warn('mostrar alumno en el diagrama');
+        console.warn('mostrar alumno en el diagrama');
         break;
       case 'student':
-          console.log('student loading');
-          this.route.navigate(['/layout/student', this.search]);          
+        // console.log('student loading');
+        this.route.navigate(['/layout/student', this.search]);
         break;
     }
   }
