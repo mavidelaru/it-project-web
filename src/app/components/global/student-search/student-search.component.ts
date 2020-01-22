@@ -33,8 +33,8 @@ export class StudentSearchComponent implements OnInit {
   }
 
   // return the stundent's id from the select
-  searchQuery(q: any) {
-    this.search = q.data[0].id;
+  searchQuery(q: any) {    
+    this.search = q.data[0].text;
   }
 
   onSubmit() {

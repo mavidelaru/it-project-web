@@ -24,7 +24,7 @@ export class TimeBarComponent implements OnInit {
               private aRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.remainingHoursWeek();
+    // this.remainingHoursWeek();
   }
 
   remainingHoursWeek() {
