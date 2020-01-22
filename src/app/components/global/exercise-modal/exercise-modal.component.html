@@ -1,13 +1,9 @@
 <button type="button" class="btn submit-btn full-container" (click)="openModal(template)">
     Cambiar estado </button>
 
-
-
-
-
 <ng-template #template>
     <div class="modal-header">
-        <h3 class="modal-title pull-left">Revisión</h3>
+        <h3 class="modal-title pull-left">Revisión del ejercicio {{exercise.name}}</h3>
         <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
     <span aria-hidden="true">&times;</span>
     </button>
@@ -24,13 +20,14 @@
     <div *ngIf="f.date.errors.required">Date is required</div>
     <div *ngIf="f.date.errors.pattern">Invalid date format</div>
     </div> -->
+
             </div>
 
         </div>
         <div class="row justify-content-between m-1">
-            <button type="submit" class="btn grey-btn" (click)="changeDate(date.value)">Entregado</button>
-            <button type="button" class="btn blue-btn col-3">Corregido</button>
-            <button type=" button " class="btn submit-btn col-3">A revisar</button>
+            <button type="submit" class="btn grey-btn" (click)="changeDone(date.value)">Entregado</button>
+            <button type="button" class="btn blue-btn col-3" (click)="changeCorrected(date.value)">Corregido</button>
+            <button type=" button " class="btn submit-btn col-3" (click)="changeReviewed(date.value)">A revisar</button>
         </div>
 
     </div>

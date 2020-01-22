@@ -16,6 +16,7 @@ export class ExercisesComponent implements OnInit {
   ngOnInit() {
     this.exercises = this.exerciseService.getExercises();
     console.log(this.exercises);
+    
   }
 
 }
