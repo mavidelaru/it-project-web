@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 // graficos
 import { ChartsModule } from 'ng2-charts';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 import { ResetPasswordRequestComponent } from './components/login-components/reset-password-request/reset-password-request.component';
 import { RouterModule } from '@angular/router';
@@ -32,6 +33,7 @@ import { ClassroomComponent } from './components/classroom/classroom.component';
 
 // Services
 import { StudentSeatService } from './services/student-seat.service';
+import { StudentSearchService } from './services/student-search.service';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -45,8 +47,10 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { StudentPositionComponent } from './components/classroom/student-position/student-position.component';
 
 import { Select2Module } from 'ng2-select2';
+import { TimeBarComponent } from './components/student/time-bar/time-bar.component';
 import { StudentComponent } from './components/student/student.component';
 import { ExerciseModalComponent } from './components/global/exercise-modal/exercise-modal.component';
+
 
 
 @NgModule({
@@ -72,8 +76,9 @@ import { ExerciseModalComponent } from './components/global/exercise-modal/exerc
     StudentPositionComponent,
     StudentSearchComponent,
     StudentComponent,
-    ExerciseModalComponent
+    ExerciseModalComponent,
 
+    TimeBarComponent
   ],
   imports: [
     BrowserModule,
@@ -85,12 +90,14 @@ import { ExerciseModalComponent } from './components/global/exercise-modal/exerc
     ModalModule.forRoot(),
     APP_ROUTING,
     BsDatepickerModule.forRoot(),
-    Select2Module
+    Select2Module,
+    TooltipModule.forRoot()
   ],
   providers: [
     StudentSeatService,
-    AlumnoService
+    AlumnoService,
+    StudentSearchService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
