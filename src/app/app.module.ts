@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 // graficos
 import { ChartsModule } from 'ng2-charts';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 import { ResetPasswordRequestComponent } from './components/login-components/reset-password-request/reset-password-request.component';
 import { RouterModule } from '@angular/router';
@@ -74,12 +75,13 @@ import { StudentComponent } from './components/student/student.component';
     BrowserAnimationsModule,
     ModalModule.forRoot(),
     APP_ROUTING,
-    Select2Module
+    Select2Module,
+    TooltipModule.forRoot()
   ],
   providers: [
     StudentSeatService,
     AlumnoService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
