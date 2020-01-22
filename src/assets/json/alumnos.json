@@ -1,47 +1,74 @@
 
-
 [
   {
   "name":"Pepín",
   "lastname":"Gálvez",
   "absences":"12",
-  "limitDate": "new Date(2019, 11, 14)"
+  "startDate": "2019-06-17 15:56:23",
+  "limitDate": "2019-06-17 15:56:23",
+  "mail": "Pepito@falso.es",
+  "itinerary": "Front-end",
+  "img": "men.svg"
   },
   {
     "name":"Honorio",
     "lastname":"Martín",
     "absences":"6",
-    "limitDate": "new Date(2019, 11, 18)"
+    "startDate": "2019-06-17 15:56:23",
+    "limitDate": "2019-06-17 15:56:23",
+    "mail": "Pepito@falso.es",
+    "itinerary": "Back-end",
+    "img": "men.svg"
   },
   {
     "name":"Carlota",
     "lastname":"Cifuentes",
     "absences":"8",
-    "limitDate": "new Date(2019, 11, 20)"
+    "startDate": "2019-06-17 15:56:23",
+    "limitDate": "2019-06-17 15:56:23",
+    "mail": "Pepito@falso.es",
+    "itinerary": ".Net",
+    "img": "women.svg"
   },
   {
     "name":"Pepe",
     "lastname":"Gonzalez",
     "absences":"0",
-    "limitDate": "new Date(2019, 12, 28)"
+    "startDate": "2019-06-17 15:56:23",
+    "limitDate": "2019-06-17 15:56:23",
+    "mail": "Pepito@falso.es",
+    "itinerary": ".Net",
+    "img": "men.svg"
   },
   {
     "name":"Pedro",
     "lastname":"Sanchez",
     "absences":"11",
-    "limitDate": "new Date(2020, 1, 20)"
+    "startDate": "2019-06-17 15:56:23",
+    "limitDate": "2019-06-17 15:56:23",
+    "mail": "Pepito@falso.es",
+    "itinerary": "Back-end",
+    "img": "men.svg"
   },
   {
     "name":"Marta",
     "lastname":"Vidal",
     "absences":"12",
-    "limitDate": "new Date(2020, 7, 16)"
+    "startDate": "2019-06-17 15:56:23",
+    "limitDate": "2019-06-17 15:56:23",
+    "mail": "Pepito@falso.es",
+    "itinerary": "Front-end",
+    "img": "women.svg"
   },
   {
     "name":"Gemma",
     "lastname":"Capmany",
     "absences":"7",
-    "limitDate": "new Date(2020, 11, 18)"
+    "startDate": "2019-06-17 15:56:23",
+    "limitDate": "2019-06-17 15:56:23",
+    "mail": "Pepito@falso.es",
+    "itinerary": "Back-end",
+    "img": "women.svg"
   }
 
 ]
