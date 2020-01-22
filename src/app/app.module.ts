@@ -33,6 +33,7 @@ import { ClassroomComponent } from './components/classroom/classroom.component';
 
 // Services
 import { StudentSeatService } from './services/student-seat.service';
+import { StudentSearchService } from './services/student-search.service';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -44,6 +45,7 @@ import { StudentPositionComponent } from './components/classroom/student-positio
 import { Select2Module } from 'ng2-select2';
 import { TimeBarComponent } from './components/student/time-bar/time-bar.component';
 import { StudentComponent } from './components/student/student.component';
+
 
 
 @NgModule({
@@ -82,7 +84,8 @@ import { StudentComponent } from './components/student/student.component';
   ],
   providers: [
     StudentSeatService,
-    AlumnoService
+    AlumnoService,
+    StudentSearchService
   ],
   bootstrap: [AppComponent],
 })
