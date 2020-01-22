@@ -5,43 +5,43 @@
   "name":"Pepín",
   "lastname":"Gálvez",
   "absences":"12",
-  "limitDate": "new Date(2019, 11, 14)"
+  "limitDate": "new Date(2020, 11, 14)"
   },
   {
     "name":"Honorio",
     "lastname":"Martín",
     "absences":"6",
-    "limitDate": "new Date(2019, 11, 18)"
+    "limitDate": "new Date(2020, 11, 18)"
   },
   {
     "name":"Carlota",
     "lastname":"Cifuentes",
     "absences":"8",
-    "limitDate": "new Date(2019, 11, 20)"
+    "limitDate": "new Date(2020, 11, 20)"
   },
   {
     "name":"Pepe",
     "lastname":"Gonzalez",
     "absences":"0",
-    "limitDate": "new Date(2019, 12, 28)"
+    "limitDate": "new Date(2020, 12, 28)"
   },
   {
     "name":"Pedro",
     "lastname":"Sanchez",
     "absences":"11",
-    "limitDate": "new Date(2020, 1, 20)"
+    "limitDate": "new Date(2021, 1, 20)"
   },
   {
     "name":"Marta",
     "lastname":"Vidal",
     "absences":"12",
-    "limitDate": "new Date(2020, 7, 16)"
+    "limitDate": "new Date(2021, 7, 16)"
   },
   {
     "name":"Gemma",
     "lastname":"Capmany",
     "absences":"7",
-    "limitDate": "new Date(2020, 11, 18)"
+    "limitDate": "new Date(2021, 11, 18)"
   }
 
 ]

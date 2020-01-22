@@ -10,7 +10,8 @@ import { RevisionComponent } from '../revision/revision.component';
 export const LAYOUT_ROUTES: Routes = [
   { path: 'stadistics', component: StadisticsComponent },
   { path: 'student', component: StudentComponent },
-  { path: 'classroom', component: ClassroomComponent },
+  { path: 'student/:id', component: StudentComponent },
+  { path: 'classroom', component: ClassroomComponent },  
   { path: 'revision', component: RevisionComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'login' }
 ];
