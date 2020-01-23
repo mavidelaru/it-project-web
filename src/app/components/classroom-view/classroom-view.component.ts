@@ -1,5 +1,4 @@
 
-
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { StudentSeatService, StudentSeat } from '../../services/student-seat.service';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
@@ -24,11 +23,8 @@ export class ClassroomViewComponent implements OnInit {
 
   ngOnInit() {
     this.students = this._studentsService.getStudentSeat();
-
     this.orderStudentsPosition();
   }
-
-
 
   studentPopup(student: StudentSeat) {
     this.selectedStudent = student;
@@ -40,11 +36,9 @@ export class ClassroomViewComponent implements OnInit {
     this.selectedStudent = student;
     console.log(student);
     return student;
-
   }
 
 // reordena los datos por el valor de la posición
-
   orderStudentsPosition() {
     let orderedList = this.students.sort( (a,b) => {
      if (a.position > b.position) {
@@ -69,7 +63,6 @@ export class ClassroomViewComponent implements OnInit {
   // funciones dentro del modal
   confirm(){ };
   decline(){ };
-
 
 }
 
