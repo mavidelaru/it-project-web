@@ -58,16 +58,26 @@ export class ExerciseModalComponent implements OnInit {
 
   changeReviewed(date) {
     this.exercise = this.service.getExercise(this.exercise.id);
-    this.exercise.state = "A revisar";
-    this.changeDate(date);
+    if (this.exercise.state != "A revisar") {
+      this.exercise.state = "A revisar";
+      this.changeDate(date);
+      this.closeModal();
+    } else { }
+    console.log("ya está revisado");
     this.closeModal();
+
   }
 
   changeDone(date) {
     this.exercise = this.service.getExercise(this.exercise.id);
-    this.exercise.state = "Entregado";
-    this.changeDate(date);
+    if (this.exercise.state != "Entregado") {
+      this.exercise.state = "Entregado";
+      this.changeDate(date);
+      this.closeModal();
+    }
+    console.log("ya está entregado");
     this.closeModal();
+
   }
 
   changeDate(date: any) {

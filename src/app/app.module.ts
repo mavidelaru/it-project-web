@@ -50,7 +50,6 @@ import { Select2Module } from 'ng2-select2';
 import { StudentComponent } from './components/student/student.component';
 import { FileStudentComponent } from './components/student/file-student/file-student.component';
 import { TimeBarComponent } from './components/student/time-bar/time-bar.component';
-import { StudentComponent } from './components/student/student.component';
 import { ExerciseModalComponent } from './components/global/exercise-modal/exercise-modal.component';
 
 
@@ -80,7 +79,7 @@ import { ExerciseModalComponent } from './components/global/exercise-modal/exerc
     StudentSearchComponent,
     StudentComponent,
     ExerciseModalComponent,
-
+    FileStudentComponent,
     TimeBarComponent
   ],
   imports: [
