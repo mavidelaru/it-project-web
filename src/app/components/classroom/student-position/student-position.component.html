@@ -1,14 +1,18 @@
 <!--  <button type="button" (click)="studentPopUp()" (mouseover)="selectStudent()" class="student"> </button>
 ngIf para colores front-end, back-end, net (clases) -->
 
+<ng-template #tooltipTemplate>
+    <div class="tooltip-color">{{ student.name }} {{ student.lastname }}</div>
+</ng-template>
+
 <div class="student-container">
-    <button *ngIf="student.itinerary == 'Front End'" type="button" class="student front-end" [tooltip]="student.name" placement="top">
+    <button *ngIf="student.itinerary == 'Front End'" type="button" class="student front-end" [tooltip]="tooltipTemplate" placement="top">
 
     </button>
-    <button *ngIf="student.itinerary == 'Back End'" type="button" class="student back-end" [tooltip]="student.name" placement="top">
+    <button *ngIf="student.itinerary == 'Back End'" type="button" class="student back-end" [tooltip]="tooltipTemplate" placement="top">
 
     </button>
-    <button *ngIf="student.itinerary == '.Net'" type="button" class="student net" [tooltip]="student.name" placement="top">
+    <button *ngIf="student.itinerary == '.Net'" type="button" class="student net" [tooltip]="tooltipTemplate" placement="top">
 
     </button>
     <button *ngIf="student.itinerary == ''" type="button" class="student empty">
