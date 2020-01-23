@@ -1,0 +1,14 @@
+@import '../../../../assets/colors';
+
+span{
+padding: 2%;
+}
+
+.btn-outline-pink {
+  color: $pink;
+  border-color: $pink;
+  &:hover {
+      color: $white;
+      background-color: $pink;
+  }
+}
