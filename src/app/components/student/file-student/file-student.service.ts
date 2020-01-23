@@ -15,9 +15,7 @@ export class FilestudentService {
 
   constructor(private http: HttpClient) { }
 
-  getRegion(region:string):Observable<Alumno[]>{
-    return this.http.get<Alumno[]>(alumnos);
-  }
+
 
 
 }

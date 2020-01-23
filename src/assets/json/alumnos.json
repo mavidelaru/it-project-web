@@ -8,6 +8,7 @@
   "limitDate": "2019-06-17 15:56:23",
   "mail": "Pepito@falso.es",
   "itinerary": "Front-end",
+  "progress":"50%",
   "img": "men.svg"
   },
   {
@@ -18,6 +19,7 @@
     "limitDate": "2019-06-17 15:56:23",
     "mail": "Pepito@falso.es",
     "itinerary": "Back-end",
+    "progress":"86%",
     "img": "men.svg"
   },
   {
@@ -28,6 +30,7 @@
     "limitDate": "2019-06-17 15:56:23",
     "mail": "Pepito@falso.es",
     "itinerary": ".Net",
+    "progress":"15%",
     "img": "women.svg"
   },
   {
@@ -38,6 +41,7 @@
     "limitDate": "2019-06-17 15:56:23",
     "mail": "Pepito@falso.es",
     "itinerary": ".Net",
+    "progress":"40%",
     "img": "men.svg"
   },
   {
@@ -48,6 +52,7 @@
     "limitDate": "2019-06-17 15:56:23",
     "mail": "Pepito@falso.es",
     "itinerary": "Back-end",
+    "progress":"25%",
     "img": "men.svg"
   },
   {
@@ -58,6 +63,7 @@
     "limitDate": "2019-06-17 15:56:23",
     "mail": "Pepito@falso.es",
     "itinerary": "Front-end",
+    "progress":"55%",
     "img": "women.svg"
   },
   {
@@ -68,6 +74,7 @@
     "limitDate": "2019-06-17 15:56:23",
     "mail": "Pepito@falso.es",
     "itinerary": "Back-end",
+    "progress":"25%",
     "img": "women.svg"
   }
 

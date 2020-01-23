@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 // graficos
 import { ChartsModule } from 'ng2-charts';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 import { ResetPasswordRequestComponent } from './components/login-components/reset-password-request/reset-password-request.component';
 import { RouterModule } from '@angular/router';
@@ -32,6 +33,7 @@ import { ClassroomComponent } from './components/classroom/classroom.component';
 
 // Services
 import { StudentSeatService } from './services/student-seat.service';
+import { StudentSearchService } from './services/student-search.service';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -43,6 +45,9 @@ import { StudentPositionComponent } from './components/classroom/student-positio
 import { Select2Module } from 'ng2-select2';
 import { StudentComponent } from './components/student/student.component';
 import { FileStudentComponent } from './components/student/file-student/file-student.component';
+import { TimeBarComponent } from './components/student/time-bar/time-bar.component';
+
+
 
 
 @NgModule({
@@ -66,6 +71,7 @@ import { FileStudentComponent } from './components/student/file-student/file-stu
     StudentSearchComponent,
     StudentComponent,
     FileStudentComponent
+    //TimeBarComponent
   ],
   imports: [
     BrowserModule,
@@ -76,12 +82,14 @@ import { FileStudentComponent } from './components/student/file-student/file-stu
     BrowserAnimationsModule,
     ModalModule.forRoot(),
     APP_ROUTING,
-    Select2Module
+    Select2Module,
+    TooltipModule.forRoot()
   ],
   providers: [
     StudentSeatService,
-    AlumnoService
+    AlumnoService,
+    StudentSearchService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

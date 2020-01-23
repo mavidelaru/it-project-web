@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StudentSearchService } from 'src/app/services/student-search.service';
 
 
 @Component({
@@ -10,7 +11,9 @@ import { Component, OnInit } from '@angular/core';
 export class ClassroomComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(private search: StudentSearchService) {
+    search.page = 'classroom';
+  }
 
   ngOnInit() {
 

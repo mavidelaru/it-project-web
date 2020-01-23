@@ -5,304 +5,358 @@ export class StudentSeatService {
     // datos (falsos) para obtener posición
     private students: StudentSeat[] = [
         {
-            name: 'PANTINI, FABRIZIO',
+            name: 'PERALTA, FABRIZIO',
             itinerary: 'Front End',
-            position: 1
+            position: 1,
+            gender: 'M'
         },
         {
-            name: 'KONTAXIS, PANAGIOTIS',
+            name: 'GUZMAN, PEDRO',
             itinerary: 'Back End',
-            position: 2
+            position: 2,
+            gender: 'M'
         },
         {
-            name: 'SOMEONE ANYONE',
+            name: 'SOMEONE, ANYONE',
             itinerary: 'Front End',
-            position: 3
+            position: 3,
+            gender: 'F'
         },
         {
-            name: 'SANCHEZ ABAD, JAVIER',
+            name: 'SANCHEZ, XAVI',
             itinerary: '.Net',
-            position: 4
+            position: 4,
+            gender: 'M'
         },
         {
-            name: 'FERNANDEZ NAVARRO, CRISTINA',
+            name: 'FERNANDEZ, MÓNICA',
             itinerary: 'Back End',
-            position: 5
+            position: 5,
+            gender: 'F'
         },
         {
-            name: 'LEON HIDALGO, ESPERANZA',
+            name: 'LEON, EL REY',
             itinerary: 'Front End',
-            position: 6
+            position: 6,
+            gender: 'M'
         },
         {
-            name: 'CALVO RAMIREZ, JAVIER',
+            name: 'CALVO, FERNANDO',
             itinerary: '.Net',
-            position: 7
+            position: 7,
+            gender: 'M'
         },
         {
-            name: 'URIZAR TORRICO, BARLAN TITO',
+            name: 'URIZAR, PEPE',
             itinerary: 'Back End',
-            position: 8
+            position: 8,
+            gender: 'M'
         },
         {
-            name: 'ARIAS PIFERRER, JUDIT',
+            name: 'ARIAS, JOANA',
             itinerary: 'Front End',
-            position: 9
+            position: 9,
+            gender: 'F'
         },
         {
-            name: 'BOLEA SANCHO, DAVID',
+            name: 'BOLEA, JAVIER',
             itinerary: 'Front End',
-            position: 10
+            position: 10,
+            gender: 'M'
         },
         {
-            name: 'PUNTI SABATES, CRISTIAN',
+            name: 'SABATER, MIRIAM',
             itinerary: '.Net',
-            position: 11
+            position: 11,
+            gender: 'F'
         },
         {
-            name: 'VIADER SAURET, GILBERT',
+            name: 'GIL, GILBERTO',
             itinerary: 'Back End',
-            position: 12
+            position: 12,
+            gender: 'M'
         },
         {
-            name: 'BARBARA ROVIRA, ZOE',
+            name: 'ROVIRA, MERCEDES',
             itinerary: 'Back End',
-            position: 13
+            position: 13,
+            gender: 'F'
         },
         {
-            name: 'MARCH VERA, JORDI',
+            name: 'PLA, JORDI',
             itinerary: 'Front End',
-            position: 14
+            position: 14,
+            gender: 'M'
         },
         {
-            name: 'SABATE FABREGAT, JAUME',
+            name: 'SABATE, GERARD',
             itinerary: '.Net',
-            position: 15
+            position: 15,
+            gender: 'M'
         },
         {
-            name: 'AKSIMENKO, EVGENI',
+            name: 'SMITH, MIKE',
             itinerary: '.Net',
-            position: 16
+            position: 16,
+            gender: 'M'
         },
         {
-            name: 'TIMILSINA, BINAY',
+            name: 'LOPEZ, CELIA',
             itinerary: 'Front End',
-            position: 17
+            position: 17,
+            gender: 'F'
         },
         {
-            name: 'VIDAL PANIAGUA, ANDREA',
+            name: 'VIDAL, CECILIA',
             itinerary: 'Front End',
-            position: 18
+            position: 18,
+            gender: 'F'
         },
         {
-            name: 'CORTES NIEVES, PEDRO',
+            name: 'CORTES, JUAN',
             itinerary: 'Front End',
-            position: 19
+            position: 19,
+            gender: 'M'
         },
         {
-            name: 'MAÑÁ ALVAREZ, DAVID',
+            name: 'ALVAREZ, JAIME',
             itinerary: 'Back End',
-            position: 20
+            position: 20,
+            gender: 'M'
         },
         {
-            name: 'MATALLANES BECERRA, MIQUEL',
+            name: 'BECERRA, ELIANA',
             itinerary: 'Front End',
-            position: 21
+            position: 21,
+            gender: 'F'
         },
         {
-            name: 'FABREGAS SALINAS, CRISTIAN',
+            name: 'FABREGAS, MARTA',
             itinerary: 'Front End',
-            position: 22
+            position: 22,
+            gender: 'F'
         },
         {
-            name: 'HASANBASIC GAZIVODA, VEDRANA',
+            name: 'SANCHEZ, ROBERTO',
             itinerary: 'Front End',
-            position: 23
+            position: 23,
+            gender: 'M'
         },
         {
-            name: 'MINGUELLA BLASCO, DANIEL',
+            name: 'BLASCO, JUAN',
             itinerary: 'Front End',
-            position: 24
+            position: 24,
+            gender: 'M'
         },
         {
-            name: 'LESCANO CORREA, MAGALI',
+            name: 'LESCANO, MARIELA',
             itinerary: 'Front End',
-            position: 25
+            position: 25,
+            gender: 'F'
         },
         {
-            name: 'FERNANDEZ SUNYER, MAYA',
+            name: 'FERNANDEZ, DANIEL',
             itinerary: 'Front End',
-            position: 26
+            position: 26,
+            gender: 'M'
         },
         {
-            name: 'SAURA GARCIA, LUIS ALFONSO',
+            name: 'SAURA, ALFONSO',
             itinerary: 'Front End',
-            position: 27
+            position: 27,
+            gender: 'M'
         },
         {
-            name: 'CASTRO SASTRE, RODRIGO',
+            name: 'SASTRE, LUIS',
             itinerary: 'Front End',
-            position: 28
+            position: 28,
+            gender: 'M'
         },
         {
-            name: 'SCATTOLINI, DARIO NICOLAS',
+            name: 'CASTRO, DARIO',
             itinerary: 'Back End',
-            position: 29
+            position: 29,
+            gender: 'M'
         },
         {
-            name: 'BELLINI, DANIEL',
+            name: 'SUAREZ, DANIEL',
             itinerary: 'Back End',
-            position: 30
+            position: 30,
+            gender: 'M'
         },
         {
-            name: 'CANALS REIG, JAUME',
+            name: 'CANALS, JOAN',
             itinerary: '.Net',
-            position: 31
+            position: 31,
+            gender: 'M'
         },
         {
-            name: 'CEVAS MUÑOZ, RODRIGO IGNACIO',
+            name: 'MUÑOZ, PEPE',
             itinerary: '.Net',
-            position: 32
+            position: 32,
+            gender: 'M'
         },
         {
-            name: 'PASCUAL AGROMAYOR, ANA',
+            name: 'PASCUAL, RODRIGO',
             itinerary: '.Net',
-            position: 33
+            position: 33,
+            gender: 'M'
         },
         {
-            name: 'MARGALEF RIESTRA, XAVIER',
+            name: 'MARGALEF, JAUME',
             itinerary: '.Net',
-            position: 34
+            position: 34,
+            gender: 'M'
         },
         {
-            name: 'GONZALEZ VERGES, JORDI',
+            name: 'GONZALEZ, JUANA',
             itinerary: 'Front End',
-            position: 35
+            position: 35,
+            gender: 'F'
         },
         {
-            name: 'VILLEGAS PEÑA, CRISTIAN DANIEL',
+            name: 'PEÑA, FABIO',
             itinerary: 'Front End',
-            position: 36
+            position: 36,
+            gender: 'M'
         },
         {
-            name: 'BONET VALLVERDU, JORDI',
+            name: 'BONET, ORIOL',
             itinerary: 'Front End',
-            position: 37
+            position: 37,
+            gender: 'M'
         },
         {
-            name: 'ZAJARA CAMILO, ALVARO',
+            name: 'VERGES, CAMILO',
             itinerary: 'Back End',
-            position: 38
+            position: 38,
+            gender: 'M'
         },
         {
-            name: 'BENEJAM MINGORANCE, SERGI',
+            name: 'VALLVERDU, SERGI',
             itinerary: 'Back End',
-            position: 39
+            position: 39,
+            gender: 'M'
         },
         {
-            name: 'GULYAEVA, ANASTASIA',
+            name: 'MORALES, SILVIA',
             itinerary: 'Back End',
-            position: 40
+            position: 40,
+            gender: 'F'
         },
         {
-            name: 'DEL MORAL ASENSIO, JAVIER',
+            name: 'ASENSIO, ANA',
             itinerary: 'Back End',
-            position: 41
+            position: 41,
+            gender: 'F'
         },
         {
-            name: 'CASTRO, ABRAHAM',
+            name: 'CASTRO, LUCIANA',
             itinerary: 'Back End',
-            position: 42
+            position: 42,
+            gender: 'F'
         },
         {
-            name: 'PRADO ROMERO, ARTURO ELMER',
+            name: 'PAZOS, PEDRO',
             itinerary: 'Back End',
-            position: 43
+            position: 43,
+            gender: 'M'
         },
         {
-            name: 'LOPEZ MUÑOZ, PEDRO ALEJANDRO',
+            name: 'CASTRO, ALEJANDRO',
             itinerary: 'Back End',
-            position: 44
+            position: 44,
+            gender: 'M'
         },
         {
-            name: 'FERNANDEZ ARAMBURU LUMBIARRES, BEGOÑA',
+            name: 'CAMPO, ARTURO',
             itinerary: 'Back End',
-            position: 45
+            position: 45,
+            gender: 'M'
         },
         {
-            name: 'FERNANDEZ FIAÑO, DANIEL',
+            name: 'FERNANDEZ, VIRGINIA',
             itinerary: 'Back End',
-            position: 46
+            position: 46,
+            gender: 'F'
         },
         {
-            name: 'CAMPO LEMUS, ANA VIRGINIA',
+            name: 'GIL, ANA',
             itinerary: 'Front End',
-            position: 47
+            position: 47,
+            gender: 'F'
         },
         {
-            name: 'SCHVARZMAN MUÑOZ, PABLO',
+            name: 'MUÑOZ, JOAN',
             itinerary: 'Front End',
-            position: 48
+            position: 48,
+            gender: 'M'
         },
         {
-            name: 'LLEDO LLACER, JONATAN',
+            name: 'RODRIGUEZ, JONATAN',
             itinerary: 'Front End',
-            position: 49
+            position: 49,
+            gender: 'F'
         },
         {
-            name: 'CID RODRIGUEZ, CRISTINA',
+            name: 'CID, CAMPEADOR',
             itinerary: 'Front End',
-            position: 50
+            position: 50,
+            gender: 'M'
         },
         {
-            name: 'ASENSIO GARCIA, MARIO',
+            name: 'GARCIA, MARIO',
             itinerary: 'Front End',
-            position: 52
+            position: 52,
+            gender: 'M'
         },
         {
-            name: 'PEREIRA, EVANDRO',
+            name: 'PEREZ, EVA',
             itinerary: 'Back End',
-            position: 51
-        },
-        {
-            name: 'ELIAS LAIRET, ALI TIUNA',
-            itinerary: 'Back End',
-            position: 54
+            position: 51,
+            gender: 'F'
         },
         {
             name: '',
             itinerary: '',
-            position: 53
+            position: 53,
+            gender: ''
         },
         {
             name: '',
             itinerary: '',
-            position: 55
+            position: 55,
+            gender: ''
         },
         {
-            name: 'SANCHEZ FLORIDO, MIGUEL ANGEL',
+            name: 'SANCHEZ, LEON',
             itinerary: 'Back End',
-            position: 56
+            position: 56,
+            gender: 'M'
         },
         {
-            name: 'NICODEMUS DE TORRES, ANGEL',
+            name: 'TORRES, ANGELA',
             itinerary: 'Back End',
-            position: 57
+            position: 57,
+            gender: 'F'
         },
         {
-            name: 'PAZOS ANANIA, EMILIANO',
+            name: 'PAZOS, EMILIO',
             itinerary: 'Back End',
-            position: 59
+            position: 59,
+            gender: 'M'
         },
         {
             name: '',
             itinerary: '',
-            position: 60
+            position: 60,
+            gender: ''
         },
         {
-            name: 'SOMEONE ANYONE',
+            name: 'RIERA, ALBERT',
             itinerary: 'Front End',
-            position: 58
+            position: 58,
+            gender: 'M'
         }
 
     ];
@@ -322,4 +376,5 @@ export interface StudentSeat {
     name: string;
     itinerary: string;
     position: number;
+    gender: string;
 }
