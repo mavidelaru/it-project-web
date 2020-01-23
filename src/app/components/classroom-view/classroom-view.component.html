@@ -1,6 +1,3 @@
-
-
-
 <div class="container-fluid my-3 pb-4">
     <div class="students-background px-4 py-5">
 
@@ -185,7 +182,7 @@
         </button>
     </div>
     <div class="modal-body">
-        <h2 class="mt-1 mb-3">{{ selectedStudent.name | uppercase }}</h2>
+        <h2 class="mt-1 mb-3">{{ selectedStudent.name | uppercase }} {{ selectedStudent.lastname | uppercase }}</h2>
         <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
@@ -215,5 +212,3 @@
         <button type="button" class="btn button-modal ml-1 mt-3">Ir a perfil</button>
     </div>
 </ng-template>
-
-

@@ -4,6 +4,14 @@
 </select>
 
 <!--Contenedor de la ficha-->
+<div *ngIf="selectedStudent.length == 0" class="row justify-content-md-center">
+
+  <button class="btn btn-outline-primary" type="button" disabled>
+    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+    Esperando a seleccionar alumno
+  </button>
+
+</div>
 <div *ngIf="selectedStudent.length > 1">
   <div class="container-fluid">
     <div class="row">
