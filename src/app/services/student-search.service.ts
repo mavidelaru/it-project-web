@@ -14,6 +14,8 @@ export class StudentSearchService {
   public studentList: StudentSearch[] = [];  
   public page: string;
 
+  public selectedStudent = {};
+
 
   constructor() {
     for (let i = 0; i < this.StudentSample.length; i++) {
@@ -37,6 +39,11 @@ export class StudentSearchService {
             return el.LastName.toLowerCase().indexOf(query.toLowerCase()) > -1;          
         }
     });
+  }
+
+  getSelectedStudent(stu: any) {
+    this.selectedStudent = stu;
+    return this.selectedStudent;
   }
 
   fullName(name: string, surname: string): string {
