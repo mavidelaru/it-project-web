@@ -35,6 +35,7 @@ export class StudentSearchComponent implements OnInit {
 
   // return the stundent's id from the select
   searchQuery(q: any) {
+    this.studentSearchService.getSelectedStudent(q);
     this.search = q.data[0].text;
   }
 
@@ -44,6 +45,7 @@ export class StudentSearchComponent implements OnInit {
     switch (this.studentSearchService.page) {
       case 'classroom':
         console.warn('mostrar alumno en el diagrama');
+        console.log(this.studentSearchService.selectedStudent);
         break;
       case 'student':
         // console.log('student loading');
