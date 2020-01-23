@@ -25,29 +25,17 @@ export class ExerciseModalComponent implements OnInit {
     this.dpConfig.containerClass = 'theme-default';
     // this.dpConfig.dateInputFormat = 'DD/MM/YYYY';
   }
-  
+
   ngOnInit() {
     // this.dateForm = this.formBuilder.group({
+    //   date: ['', Validators.required, Validators.pattern('^(0?[1-9]|[12][0-9]|3[01])[\/](0?[1-9]|1[012])[\/\-]\d{4}$')]
 
-    // date: ['', [Validators.required, Validators.pattern('/^[0-9]{1,2}([,.][0-9]{0,2})?$/')]]
     // });
   }
-  // get f() {
-  // return this.dateForm.controls;
-  // }
-  // onSubmit() {
-  // this.submitted = true;
-  // // stop there if form is invalid
-  // if (this.dateForm.invalid) {
-  // return;
-  // }
-  // // SUCCESS
-  // alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.dateForm.value));
-  // }
+
 
   openModal(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template);
-
   }
 
   closeModal() {
@@ -56,9 +44,16 @@ export class ExerciseModalComponent implements OnInit {
 
   changeCorrected(date) {
     this.exercise = this.service.getExercise(this.exercise.id);
-    this.exercise.state = "Corregido";
-    this.changeDate(date);
-    this.closeModal();
+    if (this.exercise.state != "Corregido") {
+      this.exercise.state = "Corregido";
+      this.changeDate(date);
+      this.closeModal();
+      console.log("estado cambiado");
+    } else {
+      console.log("ya está corregido");
+      this.closeModal();
+    }
+
   }
 
   changeReviewed(date) {
