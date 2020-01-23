@@ -29,8 +29,8 @@ export class ClassroomViewComponent implements OnInit {
 // método temporal para visualizar student por consola
   selectStudent(student: StudentSeat) {
     this.selectedStudent = student;
-    return student;
     console.log(student);
+    return student;
   }
 
 // reordena los datos por el valor de la posición
