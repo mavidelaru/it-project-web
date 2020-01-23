@@ -13,7 +13,6 @@
                 "@schematics/angular:class": {
                     "skipTests": true
                 },
-
                 "@schematics/angular:directive": {
                     "skipTests": true
                 },
@@ -48,7 +47,6 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.scss",
                             "./node_modules/bootstrap/dist/css/bootstrap.min.css",
                             "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
                             "node_modules/select2/dist/css/select2.min.css"

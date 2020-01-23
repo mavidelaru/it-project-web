@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ExerciseService } from '../../services/exercise.service';
+import { Exercise } from '../global/tables/model/exercise';
 import { StudentSearchService } from 'src/app/services/student-search.service';
 
 @Component({
@@ -8,7 +10,8 @@ import { StudentSearchService } from 'src/app/services/student-search.service';
 })
 export class StudentComponent implements OnInit {
 
-  constructor(private search: StudentSearchService) {
+
+  constructor(private exerciseService: ExerciseService, private search: StudentSearchService) {
     search.page = 'student';
   }
 

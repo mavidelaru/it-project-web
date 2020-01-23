@@ -39,13 +39,18 @@ import { StudentSearchService } from './services/student-search.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { LayoutComponent } from './components/layout/layout.component';
+
 import { StudentPopupComponent } from './components/classroom/student-popup/student-popup.component';
+import { ExercisesComponent } from './components/student/exercises/exercises.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+
 import { StudentPositionComponent } from './components/classroom/student-position/student-position.component';
 
 import { Select2Module } from 'ng2-select2';
 import { StudentComponent } from './components/student/student.component';
 import { FileStudentComponent } from './components/student/file-student/file-student.component';
 import { TimeBarComponent } from './components/student/time-bar/time-bar.component';
+import { ExerciseModalComponent } from './components/global/exercise-modal/exercise-modal.component';
 
 
 
@@ -66,12 +71,16 @@ import { TimeBarComponent } from './components/student/time-bar/time-bar.compone
     GenrepieComponent,
     PeoplepieComponent,
     LayoutComponent,
+
+    StudentPopupComponent,
+    ExercisesComponent,
     StudentPopupComponent,
     StudentPositionComponent,
     StudentSearchComponent,
     StudentComponent,
-    FileStudentComponent
-    //TimeBarComponent
+    ExerciseModalComponent,
+    FileStudentComponent,
+    TimeBarComponent
   ],
   imports: [
     BrowserModule,
@@ -82,6 +91,7 @@ import { TimeBarComponent } from './components/student/time-bar/time-bar.compone
     BrowserAnimationsModule,
     ModalModule.forRoot(),
     APP_ROUTING,
+    BsDatepickerModule.forRoot(),
     Select2Module,
     TooltipModule.forRoot()
   ],
