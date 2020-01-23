@@ -20,9 +20,11 @@ export class StudentPositionComponent implements OnInit {
   ngOnInit() {
         // iniciate service
       this.students = this._studentSeatService.getStudentSeat();
+       //console.log(this.students);
 
- 
-      
+
+
+
 
   }
 

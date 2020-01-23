@@ -1,47 +1,81 @@
 
-
 [
   {
   "name":"Pepín",
   "lastname":"Gálvez",
   "absences":"12",
-  "limitDate": "new Date(2020, 11, 14)"
+  "startDate": "2019-06-17 15:56:23",
+  "limitDate": "2019-06-17 15:56:23",
+  "mail": "Pepito@falso.es",
+  "itinerary": "Front-end",
+  "progress":"50%",
+  "img": "men.svg"
   },
   {
     "name":"Honorio",
     "lastname":"Martín",
     "absences":"6",
-    "limitDate": "new Date(2020, 11, 18)"
+    "startDate": "2019-06-17 15:56:23",
+    "limitDate": "2019-06-17 15:56:23",
+    "mail": "Pepito@falso.es",
+    "itinerary": "Back-end",
+    "progress":"86%",
+    "img": "men.svg"
   },
   {
     "name":"Carlota",
     "lastname":"Cifuentes",
     "absences":"8",
-    "limitDate": "new Date(2020, 11, 20)"
+    "startDate": "2019-06-17 15:56:23",
+    "limitDate": "2019-06-17 15:56:23",
+    "mail": "Pepito@falso.es",
+    "itinerary": ".Net",
+    "progress":"15%",
+    "img": "women.svg"
   },
   {
     "name":"Pepe",
     "lastname":"Gonzalez",
     "absences":"0",
-    "limitDate": "new Date(2020, 12, 28)"
+    "startDate": "2019-06-17 15:56:23",
+    "limitDate": "2019-06-17 15:56:23",
+    "mail": "Pepito@falso.es",
+    "itinerary": ".Net",
+    "progress":"40%",
+    "img": "men.svg"
   },
   {
     "name":"Pedro",
     "lastname":"Sanchez",
     "absences":"11",
-    "limitDate": "new Date(2021, 1, 20)"
+    "startDate": "2019-06-17 15:56:23",
+    "limitDate": "2019-06-17 15:56:23",
+    "mail": "Pepito@falso.es",
+    "itinerary": "Back-end",
+    "progress":"25%",
+    "img": "men.svg"
   },
   {
     "name":"Marta",
     "lastname":"Vidal",
     "absences":"12",
-    "limitDate": "new Date(2021, 7, 16)"
+    "startDate": "2019-06-17 15:56:23",
+    "limitDate": "2019-06-17 15:56:23",
+    "mail": "Pepito@falso.es",
+    "itinerary": "Front-end",
+    "progress":"55%",
+    "img": "women.svg"
   },
   {
     "name":"Gemma",
     "lastname":"Capmany",
     "absences":"7",
-    "limitDate": "new Date(2021, 11, 18)"
+    "startDate": "2019-06-17 15:56:23",
+    "limitDate": "2019-06-17 15:56:23",
+    "mail": "Pepito@falso.es",
+    "itinerary": "Back-end",
+    "progress":"25%",
+    "img": "women.svg"
   }
 
 ]

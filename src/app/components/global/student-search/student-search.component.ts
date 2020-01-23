@@ -1,3 +1,4 @@
+import { FileStudentComponent } from './../../student/file-student/file-student.component';
 import { Component, OnInit } from '@angular/core';
 import { StudentSearch } from '../../../models/student-search';
 import { StudentSearchService } from '../../../services/student-search.service';
@@ -33,7 +34,7 @@ export class StudentSearchComponent implements OnInit {
   }
 
   // return the stundent's id from the select
-  searchQuery(q: any) {    
+  searchQuery(q: any) {
     this.search = q.data[0].text;
   }
 
