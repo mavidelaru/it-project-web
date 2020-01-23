@@ -1,3 +1,4 @@
+import { FileStudentComponent } from './../../student/file-student/file-student.component';
 import { Component, OnInit } from '@angular/core';
 import { StudentSearch } from '../../../models/student-search';
 import { StudentSearchService } from '../../../services/student-search.service';

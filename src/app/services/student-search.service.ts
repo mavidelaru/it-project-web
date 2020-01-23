@@ -11,7 +11,7 @@ export class StudentSearchService {
 
 
   public StudentSample: any = alumnos;
-  public studentList: StudentSearch[] = [];  
+  public studentList: StudentSearch[] = [];
   public page: string;
 
   public selectedStudent = {};
@@ -36,7 +36,7 @@ export class StudentSearchService {
           case 1:
             return el.FirstName.toLowerCase().indexOf(query.toLowerCase()) > -1;
           case 2:
-            return el.LastName.toLowerCase().indexOf(query.toLowerCase()) > -1;          
+            return el.LastName.toLowerCase().indexOf(query.toLowerCase()) > -1;
         }
     });
   }
@@ -55,7 +55,7 @@ export class StudentSearchService {
     return this.filterNames(filter, 1);
   }
 
-  // getStudentBySurname(filter:string): StudentSearch[]{
+  //getStudentBySurname(filter:string): StudentSearch[]{
   //   return StudentSearchSample.filter(surname => surname.Lastname == filter);
   // }
 

@@ -11,7 +11,7 @@ export const LAYOUT_ROUTES: Routes = [
   { path: 'stadistics', component: StadisticsComponent },
   { path: 'student', component: StudentComponent },
   { path: 'student/:id', component: StudentComponent },
-  { path: 'classroom', component: ClassroomComponent },  
+  { path: 'classroom', component: ClassroomComponent },
   { path: 'revision', component: RevisionComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'login' }
 ];
